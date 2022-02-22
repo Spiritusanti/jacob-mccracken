@@ -1,0 +1,81 @@
+{
+  "slices": {
+    "TextImageRight": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "text_image_right",
+        "items": [],
+        "primary": {
+          "textField": [
+            {
+              "type": "paragraph",
+              "text": "Et dolor fugiat pariatur ut. Voluptate voluptate ex excepteur adipisicing sint velit duis anim duis ipsum minim deserunt consectetur irure.",
+              "spans": []
+            }
+          ],
+          "image": {
+            "dimensions": {
+              "width": 250,
+              "height": 250
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1508385082359-f38ae991e8f2?w=250&h=250&fit=crop"
+          }
+        }
+      },
+      {
+        "variation": "textImageLeft",
+        "name": "TextImageLeft",
+        "slice_type": "text_image_right",
+        "items": [],
+        "primary": {
+          "textField": [
+            {
+              "type": "paragraph",
+              "text": "Sint tempor veniam consectetur tempor esse est amet ex pariatur veniam reprehenderit sint.",
+              "spans": []
+            }
+          ],
+          "image": {
+            "dimensions": {
+              "width": 250,
+              "height": 250
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=250&h=250&fit=crop"
+          }
+        }
+      },
+      {
+        "variation": "titleImage",
+        "name": "TitleImage",
+        "slice_type": "text_image_right",
+        "items": [],
+        "primary": {
+          "textField": [
+            {
+              "type": "paragraph",
+              "text": "Ad Lorem aliqua enim tempor quis ad.",
+              "spans": []
+            }
+          ],
+          "image": {
+            "dimensions": {
+              "width": 250,
+              "height": 250
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=250&h=250&fit=crop"
+          }
+        }
+      }
+    ]
+  },
+  "_cts": {
+    "demo-type": {}
+  }
+}

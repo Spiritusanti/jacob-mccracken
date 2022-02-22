@@ -1,0 +1,98 @@
+{
+  "id": "text_image_right",
+  "type": "SharedSlice",
+  "name": "TextImageRight",
+  "description": "TextImageRight",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextImageRight",
+      "primary": {
+        "textField": {
+          "config": {
+            "label": "textField",
+            "placeholder": "Understanding prismic",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          },
+          "type": "StructuredText"
+        },
+        "image": {
+          "config": {
+            "label": "image",
+            "constraint": {
+              "width": 250,
+              "height": 250
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "textImageLeft",
+      "name": "TextImageLeft",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextImageRight",
+      "primary": {
+        "textField": {
+          "config": {
+            "label": "textField",
+            "placeholder": "Understanding prismic",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          },
+          "type": "StructuredText"
+        },
+        "image": {
+          "config": {
+            "label": "image",
+            "constraint": {
+              "width": 250,
+              "height": 250
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "titleImage",
+      "name": "TitleImage",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TextImageRight",
+      "primary": {
+        "textField": {
+          "config": {
+            "label": "textField",
+            "placeholder": "Understanding prismic",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          },
+          "type": "StructuredText"
+        },
+        "image": {
+          "config": {
+            "label": "image",
+            "constraint": {
+              "width": 250,
+              "height": 250
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      },
+      "items": {}
+    }
+  ]
+}
