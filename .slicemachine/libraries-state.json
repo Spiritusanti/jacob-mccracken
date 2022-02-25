@@ -1,36 +1,36 @@
 {
   "slices": {
     "components": {
-      "text_image_right": {
+      "project_page": {
         "library": "slices",
-        "id": "text_image_right",
-        "name": "TextImageRight",
-        "description": "TextImageRight",
+        "id": "project_page",
+        "name": "ProjectPage",
+        "description": "ProjectPage",
         "model": {
-          "id": "text_image_right",
+          "id": "project_page",
           "type": "SharedSlice",
-          "name": "TextImageRight",
-          "description": "TextImageRight",
+          "name": "ProjectPage",
+          "description": "ProjectPage",
           "variations": [
             {
               "id": "default-slice",
               "name": "Default slice",
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
-              "description": "TextImageRight",
+              "description": "ProjectPage",
               "primary": {
-                "textField": {
+                "title": {
+                  "type": "StructuredText",
                   "config": {
-                    "label": "textField",
-                    "placeholder": "Understanding prismic",
+                    "label": "Title",
+                    "placeholder": "This is a project page",
                     "allowTargetBlank": true,
-                    "multi": "paragraph"
-                  },
-                  "type": "StructuredText"
+                    "single": "heading2"
+                  }
                 },
-                "image": {
+                "ProjectHeroImage": {
                   "config": {
-                    "label": "image",
+                    "label": "ProjectHeroImage",
                     "constraint": {
                       "width": 250,
                       "height": 250
@@ -38,29 +38,35 @@
                     "thumbnails": []
                   },
                   "type": "Image"
-                }
-              },
-              "items": {}
-            },
-            {
-              "id": "textImageLeft",
-              "name": "TextImageLeft",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "TextImageRight",
-              "primary": {
-                "textField": {
+                },
+                "description": {
+                  "type": "StructuredText",
                   "config": {
-                    "label": "textField",
-                    "placeholder": "Understanding prismic",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature",
                     "allowTargetBlank": true,
                     "multi": "paragraph"
-                  },
-                  "type": "StructuredText"
+                  }
                 },
-                "image": {
+                "githubRepoLink": {
                   "config": {
-                    "label": "image",
+                    "label": "githubRepoLink",
+                    "placeholder": "github repo",
+                    "allowTargetBlank": false
+                  },
+                  "type": "Link"
+                },
+                "LiveSiteLink": {
+                  "config": {
+                    "label": "LiveSiteLink",
+                    "placeholder": "Live site link",
+                    "allowTargetBlank": false
+                  },
+                  "type": "Link"
+                },
+                "ProjectImage2": {
+                  "config": {
+                    "label": "ProjectImage2",
                     "constraint": {
                       "width": 250,
                       "height": 250
@@ -68,29 +74,10 @@
                     "thumbnails": []
                   },
                   "type": "Image"
-                }
-              },
-              "items": {}
-            },
-            {
-              "id": "titleImage",
-              "name": "TitleImage",
-              "docURL": "...",
-              "version": "sktwi1xtmkfgx8626",
-              "description": "TextImageRight",
-              "primary": {
-                "textField": {
-                  "config": {
-                    "label": "textField",
-                    "placeholder": "Understanding prismic",
-                    "allowTargetBlank": true,
-                    "multi": "paragraph"
-                  },
-                  "type": "StructuredText"
                 },
-                "image": {
+                "ProjectImage3": {
                   "config": {
-                    "label": "image",
+                    "label": "ProjectImage3",
                     "constraint": {
                       "width": 250,
                       "height": 250
@@ -108,72 +95,57 @@
           "default-slice": {
             "variation": "default-slice",
             "name": "Default slice",
-            "slice_type": "text_image_right",
+            "slice_type": "project_page",
             "items": [],
             "primary": {
-              "textField": [
+              "title": [
                 {
-                  "type": "paragraph",
-                  "text": "Qui enim aliqua laborum consectetur ullamco pariatur.",
+                  "type": "heading2",
+                  "text": "Optimize revolutionary models",
                   "spans": []
                 }
               ],
-              "image": {
+              "ProjectHeroImage": {
                 "dimensions": {
                   "width": 250,
                   "height": 250
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=250&h=250&fit=crop"
-              }
-            }
-          },
-          "textImageLeft": {
-            "variation": "textImageLeft",
-            "name": "TextImageLeft",
-            "slice_type": "text_image_right",
-            "items": [],
-            "primary": {
-              "textField": [
+                "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=250&h=250&fit=crop"
+              },
+              "description": [
                 {
                   "type": "paragraph",
-                  "text": "Consequat laboris anim cupidatat enim aliqua esse exercitation nulla eu deserunt pariatur reprehenderit tempor commodo sint. Id minim laborum officia cupidatat amet.",
+                  "text": "Minim cupidatat nostrud elit adipisicing. Dolor sit ex ullamco non ipsum ipsum sint pariatur quis excepteur ipsum labore minim. Mollit aliqua magna qui magna minim quis ut sit consequat.",
                   "spans": []
                 }
               ],
-              "image": {
+              "githubRepoLink": {
+                "link_type": "Web",
+                "url": "http://twitter.com"
+              },
+              "LiveSiteLink": {
+                "link_type": "Web",
+                "url": "https://slicemachine.dev"
+              },
+              "ProjectImage2": {
                 "dimensions": {
                   "width": 250,
                   "height": 250
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=250&h=250&fit=crop"
-              }
-            }
-          },
-          "titleImage": {
-            "variation": "titleImage",
-            "name": "TitleImage",
-            "slice_type": "text_image_right",
-            "items": [],
-            "primary": {
-              "textField": [
-                {
-                  "type": "paragraph",
-                  "text": "Fugiat nulla dolor sit qui irure cillum deserunt id minim velit est reprehenderit.",
-                  "spans": []
-                }
-              ],
-              "image": {
+                "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=250&h=250&fit=crop"
+              },
+              "ProjectImage3": {
                 "dimensions": {
                   "width": 250,
                   "height": 250
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=250&h=250&fit=crop"
+                "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=250&h=250&fit=crop"
               }
             }
           }
@@ -185,19 +157,9 @@
         },
         "screenshotPaths": {
           "default-slice": {
-            "path": "C:\\Users\\mccra\\Documents\\webdev\\jacob-mccracken\\.slicemachine\\assets\\slices\\TextImageRight\\default-slice\\preview.png",
+            "path": "C:\\Users\\mccra\\Documents\\webdev\\jacob-mccracken\\.slicemachine\\assets\\slices\\ProjectPage\\default-slice\\preview.png",
             "width": 800,
-            "height": 130
-          },
-          "textImageLeft": {
-            "path": "C:\\Users\\mccra\\Documents\\webdev\\jacob-mccracken\\.slicemachine\\assets\\slices\\TextImageRight\\textImageLeft\\preview.png",
-            "width": 800,
-            "height": 130
-          },
-          "titleImage": {
-            "path": "C:\\Users\\mccra\\Documents\\webdev\\jacob-mccracken\\.slicemachine\\assets\\slices\\TextImageRight\\titleImage\\preview.png",
-            "width": 800,
-            "height": 53
+            "height": 1562
           }
         }
       }

@@ -4,24 +4,7 @@
     "name": "Default slice",
     "slice_type": "text_image_right",
     "items": [],
-    "primary": {
-      "textField": [
-        {
-          "type": "paragraph",
-          "text": "Qui enim aliqua laborum consectetur ullamco pariatur.",
-          "spans": []
-        }
-      ],
-      "image": {
-        "dimensions": {
-          "width": 250,
-          "height": 250
-        },
-        "alt": "Placeholder image",
-        "copyright": null,
-        "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=250&h=250&fit=crop"
-      }
-    }
+    "primary": {}
   },
   {
     "variation": "textImageLeft",
@@ -32,7 +15,7 @@
       "textField": [
         {
           "type": "paragraph",
-          "text": "Consequat laboris anim cupidatat enim aliqua esse exercitation nulla eu deserunt pariatur reprehenderit tempor commodo sint. Id minim laborum officia cupidatat amet.",
+          "text": "Officia voluptate duis sunt duis incididunt laborum do reprehenderit exercitation enim minim nostrud.",
           "spans": []
         }
       ],
@@ -43,7 +26,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=250&h=250&fit=crop"
+        "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=250&h=250&fit=crop"
       }
     }
   },
@@ -56,7 +39,7 @@
       "textField": [
         {
           "type": "paragraph",
-          "text": "Fugiat nulla dolor sit qui irure cillum deserunt id minim velit est reprehenderit.",
+          "text": "Consequat exercitation magna aliquip id tempor. Et Lorem ex proident non consequat consequat consectetur Lorem id dolor proident sint fugiat. Velit do elit ullamco tempor sit excepteur in nostrud culpa nulla magna adipisicing excepteur Lorem.",
           "spans": []
         }
       ],
@@ -67,7 +50,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=250&h=250&fit=crop"
+        "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=250&h=250&fit=crop"
       }
     }
   }

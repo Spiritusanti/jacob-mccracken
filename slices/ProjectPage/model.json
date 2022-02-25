@@ -1,0 +1,85 @@
+{
+  "id": "project_page",
+  "type": "SharedSlice",
+  "name": "ProjectPage",
+  "description": "ProjectPage",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ProjectPage",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "This is a project page",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "ProjectHeroImage": {
+          "config": {
+            "label": "ProjectHeroImage",
+            "constraint": {
+              "width": 250,
+              "height": 250
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "githubRepoLink": {
+          "config": {
+            "label": "githubRepoLink",
+            "placeholder": "github repo",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        },
+        "LiveSiteLink": {
+          "config": {
+            "label": "LiveSiteLink",
+            "placeholder": "Live site link",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        },
+        "ProjectImage2": {
+          "config": {
+            "label": "ProjectImage2",
+            "constraint": {
+              "width": 250,
+              "height": 250
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "ProjectImage3": {
+          "config": {
+            "label": "ProjectImage3",
+            "constraint": {
+              "width": 250,
+              "height": 250
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      },
+      "items": {}
+    }
+  ]
+}
