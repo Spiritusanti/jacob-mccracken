@@ -1,0 +1,69 @@
+.mainContent {
+    background-color: purple;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.titleWrapper {
+    text-align: left;
+}
+
+.heroImage {
+    width: 95%;
+    background-color: white;
+}
+
+.heroImage img {
+    width: 100%;
+}
+
+.gridWrapper {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem; 
+}
+
+.descriptionWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.asideWRapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.linkWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.linkWrapper a {
+    background: grey;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    width: 60%;
+    padding: 0.5rem 2rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 0.25rem;
+}
+
+.imageWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.imageWrapper img {
+    height: 250px;
+    width: 250px;
+}
+
+@media screen and (max-width: 600px) {
+    .gridWrapper {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,7 +1,7 @@
 {
   "slices": {
-    "TextImageRight": [
-      {
+    "TextImageRight": {
+      "0": {
         "variation": "default-slice",
         "name": "Default slice",
         "slice_type": "text_image_right",
@@ -25,7 +25,7 @@
           }
         }
       },
-      {
+      "1": {
         "variation": "textImageLeft",
         "name": "TextImageLeft",
         "slice_type": "text_image_right",
@@ -49,7 +49,7 @@
           }
         }
       },
-      {
+      "2": {
         "variation": "titleImage",
         "name": "TitleImage",
         "slice_type": "text_image_right",
@@ -72,10 +72,83 @@
             "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=250&h=250&fit=crop"
           }
         }
+      },
+      "default-slice": {
+        "primary": {}
+      }
+    },
+    "ProjectPage": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "project_page",
+        "items": [],
+        "primary": {
+          "title": [
+            {
+              "type": "heading2",
+              "text": "Enhance dynamic experiences",
+              "spans": []
+            }
+          ],
+          "ProjectHeroImage": {
+            "dimensions": {
+              "width": 250,
+              "height": 250
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=250&h=250&fit=crop"
+          },
+          "description": [
+            {
+              "type": "paragraph",
+              "text": "Elit pariatur fugiat aliquip voluptate duis fugiat labore eu.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Laborum minim nulla est aliquip reprehenderit.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Laborum proident mollit fugiat ullamco aute eiusmod anim enim nisi sunt reprehenderit minim ipsum.",
+              "spans": []
+            }
+          ],
+          "githubRepoLink": {
+            "link_type": "Web",
+            "url": "https://github.com/Spiritusanti"
+          },
+          "LiveSiteLink": {
+            "link_type": "Web",
+            "url": "https://google.com"
+          },
+          "ProjectImage2": {
+            "dimensions": {
+              "width": 250,
+              "height": 250
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=250&h=250&fit=crop"
+          },
+          "ProjectImage3": {
+            "dimensions": {
+              "width": 250,
+              "height": 250
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1472491235688-bdc81a63246e?w=250&h=250&fit=crop"
+          }
+        }
       }
     ]
   },
   "_cts": {
-    "demo-type": {}
+    "demo-type": {},
+    "project": {}
   }
 }
