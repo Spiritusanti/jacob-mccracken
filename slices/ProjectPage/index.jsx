@@ -8,7 +8,7 @@ const ProjectPage = ({ slice }) => (
     <div className={classes.titleWrapper}>
       <RichText render={slice.primary.title} />
     </div>
-    <div className={classes.heroImage}>
+    <div className={classes.heroImageWrapper}>
       <img
         src={slice.primary.ProjectHeroImage.url}
         alt={slice.primary.ProjectHeroImage.alt}

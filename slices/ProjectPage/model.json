@@ -24,8 +24,8 @@
           "config": {
             "label": "ProjectHeroImage",
             "constraint": {
-              "width": 250,
-              "height": 250
+              "width": 1920,
+              "height": 1080
             },
             "thumbnails": []
           },
@@ -77,6 +77,16 @@
             "thumbnails": []
           },
           "type": "Image"
+        },
+        "project": {
+          "config": {
+            "label": "project",
+            "customtypes": [
+              "ProjectCard"
+            ],
+            "select": "document"
+          },
+          "type": "Link"
         }
       },
       "items": {}

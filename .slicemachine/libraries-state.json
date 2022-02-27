@@ -1,6 +1,93 @@
 {
   "slices": {
     "components": {
+      "project_card": {
+        "library": "slices",
+        "id": "project_card",
+        "name": "ProjectCard",
+        "description": "ProjectCard",
+        "model": {
+          "id": "project_card",
+          "type": "SharedSlice",
+          "name": "ProjectCard",
+          "description": "ProjectCard",
+          "variations": [
+            {
+              "id": "default-slice",
+              "name": "Default slice",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ProjectCard",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Project #",
+                    "allowTargetBlank": true,
+                    "single": "heading1,heading2"
+                  }
+                },
+                "projectImage": {
+                  "config": {
+                    "label": "projectImage",
+                    "constraint": {},
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                },
+                "project": {
+                  "config": {
+                    "label": "project",
+                    "customtypes": [
+                      "project"
+                    ],
+                    "select": "document"
+                  },
+                  "type": "Link"
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default-slice": {
+            "variation": "default-slice",
+            "name": "Default slice",
+            "slice_type": "project_card",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Strategize bricks-and-clicks markets",
+                  "spans": []
+                }
+              ],
+              "projectImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+              },
+              "project": {
+                "link_type": "Web",
+                "url": "http://twitter.com"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "project_page": {
         "library": "slices",
         "id": "project_page",
@@ -32,8 +119,8 @@
                   "config": {
                     "label": "ProjectHeroImage",
                     "constraint": {
-                      "width": 250,
-                      "height": 250
+                      "width": 1920,
+                      "height": 1080
                     },
                     "thumbnails": []
                   },
@@ -85,6 +172,16 @@
                     "thumbnails": []
                   },
                   "type": "Image"
+                },
+                "project": {
+                  "config": {
+                    "label": "project",
+                    "customtypes": [
+                      "ProjectCard"
+                    ],
+                    "select": "document"
+                  },
+                  "type": "Link"
                 }
               },
               "items": {}
@@ -101,33 +198,33 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Optimize revolutionary models",
+                  "text": "Whiteboard interactive bandwidth",
                   "spans": []
                 }
               ],
               "ProjectHeroImage": {
                 "dimensions": {
-                  "width": 250,
-                  "height": 250
+                  "width": 1920,
+                  "height": 1080
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=250&h=250&fit=crop"
+                "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=1920&h=1080&fit=crop"
               },
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Minim cupidatat nostrud elit adipisicing. Dolor sit ex ullamco non ipsum ipsum sint pariatur quis excepteur ipsum labore minim. Mollit aliqua magna qui magna minim quis ut sit consequat.",
+                  "text": "Nulla ad commodo exercitation et non nostrud consequat magna ipsum proident dolor proident excepteur. Aliqua Lorem exercitation nulla magna cillum veniam eu nostrud irure cupidatat eu labore ullamco ad.",
                   "spans": []
                 }
               ],
               "githubRepoLink": {
                 "link_type": "Web",
-                "url": "http://twitter.com"
+                "url": "https://slicemachine.dev"
               },
               "LiveSiteLink": {
                 "link_type": "Web",
-                "url": "https://slicemachine.dev"
+                "url": "https://prismic.io"
               },
               "ProjectImage2": {
                 "dimensions": {
@@ -136,7 +233,7 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=250&h=250&fit=crop"
+                "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=250&h=250&fit=crop"
               },
               "ProjectImage3": {
                 "dimensions": {
@@ -145,7 +242,11 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=250&h=250&fit=crop"
+                "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=250&h=250&fit=crop"
+              },
+              "project": {
+                "link_type": "Web",
+                "url": "http://twitter.com"
               }
             }
           }
@@ -159,7 +260,7 @@
           "default-slice": {
             "path": "C:\\Users\\mccra\\Documents\\webdev\\jacob-mccracken\\.slicemachine\\assets\\slices\\ProjectPage\\default-slice\\preview.png",
             "width": 800,
-            "height": 1562
+            "height": 1939
           }
         }
       }
