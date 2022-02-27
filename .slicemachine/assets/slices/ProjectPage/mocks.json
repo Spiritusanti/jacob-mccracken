@@ -8,33 +8,33 @@
       "title": [
         {
           "type": "heading2",
-          "text": "Optimize revolutionary models",
+          "text": "Whiteboard interactive bandwidth",
           "spans": []
         }
       ],
       "ProjectHeroImage": {
         "dimensions": {
-          "width": 250,
-          "height": 250
+          "width": 1920,
+          "height": 1080
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=250&h=250&fit=crop"
+        "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=1920&h=1080&fit=crop"
       },
       "description": [
         {
           "type": "paragraph",
-          "text": "Minim cupidatat nostrud elit adipisicing. Dolor sit ex ullamco non ipsum ipsum sint pariatur quis excepteur ipsum labore minim. Mollit aliqua magna qui magna minim quis ut sit consequat.",
+          "text": "Nulla ad commodo exercitation et non nostrud consequat magna ipsum proident dolor proident excepteur. Aliqua Lorem exercitation nulla magna cillum veniam eu nostrud irure cupidatat eu labore ullamco ad.",
           "spans": []
         }
       ],
       "githubRepoLink": {
         "link_type": "Web",
-        "url": "http://twitter.com"
+        "url": "https://slicemachine.dev"
       },
       "LiveSiteLink": {
         "link_type": "Web",
-        "url": "https://slicemachine.dev"
+        "url": "https://prismic.io"
       },
       "ProjectImage2": {
         "dimensions": {
@@ -43,7 +43,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=250&h=250&fit=crop"
+        "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=250&h=250&fit=crop"
       },
       "ProjectImage3": {
         "dimensions": {
@@ -52,7 +52,11 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=250&h=250&fit=crop"
+        "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=250&h=250&fit=crop"
+      },
+      "project": {
+        "link_type": "Web",
+        "url": "http://twitter.com"
       }
     }
   }

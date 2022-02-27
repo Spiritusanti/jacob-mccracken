@@ -1,0 +1,45 @@
+{
+  "id": "project_card",
+  "type": "SharedSlice",
+  "name": "ProjectCard",
+  "description": "ProjectCard",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ProjectCard",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Project #",
+            "allowTargetBlank": true,
+            "single": "heading1,heading2"
+          }
+        },
+        "projectImage": {
+          "config": {
+            "label": "projectImage",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "project": {
+          "config": {
+            "label": "project",
+            "customtypes": [
+              "project"
+            ],
+            "select": "document"
+          },
+          "type": "Link"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

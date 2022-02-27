@@ -77,8 +77,8 @@
         "primary": {}
       }
     },
-    "ProjectPage": [
-      {
+    "ProjectPage": {
+      "0": {
         "variation": "default-slice",
         "name": "Default slice",
         "slice_type": "project_page",
@@ -144,11 +144,45 @@
             "url": "https://images.unsplash.com/photo-1472491235688-bdc81a63246e?w=250&h=250&fit=crop"
           }
         }
+      },
+      "default-slice": {
+        "primary": {}
+      }
+    },
+    "ProjectCard": [
+      {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "project_card",
+        "items": [],
+        "primary": {
+          "title": [
+            {
+              "type": "heading1",
+              "text": "Facilitate mission-critical e-tailers",
+              "spans": []
+            }
+          ],
+          "projectImage": {
+            "dimensions": {
+              "width": 900,
+              "height": 500
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?w=900&h=500&fit=crop"
+          },
+          "project": {
+            "link_type": "Web",
+            "url": "https://slicemachine.dev"
+          }
+        }
       }
     ]
   },
   "_cts": {
     "demo-type": {},
-    "project": {}
+    "project": {},
+    "ProjectCard": {}
   }
 }
