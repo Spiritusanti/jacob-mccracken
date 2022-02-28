@@ -149,8 +149,8 @@
         "primary": {}
       }
     },
-    "ProjectCard": [
-      {
+    "ProjectCard": {
+      "0": {
         "variation": "default-slice",
         "name": "Default slice",
         "slice_type": "project_card",
@@ -177,8 +177,18 @@
             "url": "https://slicemachine.dev"
           }
         }
+      },
+      "default-slice": {
+        "primary": {
+          "projectCardDescription": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
       }
-    ]
+    }
   },
   "_cts": {
     "demo-type": {},

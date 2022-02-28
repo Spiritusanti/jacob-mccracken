@@ -4,17 +4,17 @@ import { Link } from "prismic-reactjs";
 import styles from "./styles.module.css";
 
 const ProjectCard = ({ slice }) => (
-  <div className={styles.cardWrapper}>
-    <a href={Link.url(slice.primary.project)} passHref>
-      <div className={styles.titleWrapper}>
+  <a href={Link.url(slice.primary.project)} passHref>
+    <div
+      className={styles.projectCard}
+      style={{ backgroundImage: `url(${slice.primary.projectImage.url})` }}
+    >
+      <div className={styles.projectCardContentWrapper}>
         <RichText render={slice.primary.title} />
+        <RichText render={slice.primary.projectCardDescription} />
       </div>
-      <img
-        src={slice.primary.projectImage.url}
-        alt={slice.primary.projectImage.alt}
-      />
-    </a>
-  </div>
+    </div>
+  </a>
 );
 
 export default ProjectCard;
