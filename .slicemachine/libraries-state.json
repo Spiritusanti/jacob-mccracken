@@ -151,6 +151,17 @@
                   },
                   "type": "Image"
                 },
+                "ProjectDescriptionImage": {
+                  "config": {
+                    "label": "ProjectDescriptionImage",
+                    "constraint": {
+                      "width": 250,
+                      "height": 500
+                    },
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                },
                 "description": {
                   "type": "StructuredText",
                   "config": {
@@ -159,6 +170,15 @@
                     "allowTargetBlank": true,
                     "multi": "paragraph"
                   }
+                },
+                "SecondaryDescription": {
+                  "config": {
+                    "label": "SecondaryDescription",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  },
+                  "type": "StructuredText"
                 },
                 "githubRepoLink": {
                   "config": {
@@ -176,9 +196,9 @@
                   },
                   "type": "Link"
                 },
-                "ProjectImage2": {
+                "GithubRepoImage": {
                   "config": {
-                    "label": "ProjectImage2",
+                    "label": "GithubRepoImage",
                     "constraint": {
                       "width": 250,
                       "height": 250
@@ -187,9 +207,9 @@
                   },
                   "type": "Image"
                 },
-                "ProjectImage3": {
+                "LiveSiteImage": {
                   "config": {
-                    "label": "ProjectImage3",
+                    "label": "LiveSiteImage",
                     "constraint": {
                       "width": 250,
                       "height": 250
@@ -223,7 +243,7 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Whiteboard interactive bandwidth",
+                  "text": "Monetize rich web-readiness",
                   "spans": []
                 }
               ],
@@ -234,40 +254,56 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=1920&h=1080&fit=crop"
+                "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=1920&h=1080&fit=crop"
+              },
+              "ProjectDescriptionImage": {
+                "dimensions": {
+                  "width": 250,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=250&h=500&fit=crop"
               },
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Nulla ad commodo exercitation et non nostrud consequat magna ipsum proident dolor proident excepteur. Aliqua Lorem exercitation nulla magna cillum veniam eu nostrud irure cupidatat eu labore ullamco ad.",
+                  "text": "Excepteur commodo nisi nostrud ut cillum irure culpa anim voluptate. In ea pariatur elit.",
+                  "spans": []
+                }
+              ],
+              "SecondaryDescription": [
+                {
+                  "type": "paragraph",
+                  "text": "Esse et voluptate ullamco velit reprehenderit. In occaecat irure mollit adipisicing non aute et officia excepteur. Proident ex ipsum pariatur ad culpa ad.",
                   "spans": []
                 }
               ],
               "githubRepoLink": {
                 "link_type": "Web",
-                "url": "https://slicemachine.dev"
+                "url": "http://google.com"
               },
               "LiveSiteLink": {
                 "link_type": "Web",
-                "url": "https://prismic.io"
+                "url": "http://twitter.com"
               },
-              "ProjectImage2": {
+              "GithubRepoImage": {
                 "dimensions": {
                   "width": 250,
                   "height": 250
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=250&h=250&fit=crop"
+                "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?w=250&h=250&fit=crop"
               },
-              "ProjectImage3": {
+              "LiveSiteImage": {
                 "dimensions": {
                   "width": 250,
                   "height": 250
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=250&h=250&fit=crop"
+                "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=250&h=250&fit=crop"
               },
               "project": {
                 "link_type": "Web",
@@ -285,7 +321,7 @@
           "default-slice": {
             "path": "C:\\Users\\mccra\\Documents\\webdev\\jacob-mccracken\\.slicemachine\\assets\\slices\\ProjectPage\\default-slice\\preview.png",
             "width": 800,
-            "height": 1939
+            "height": 1217
           }
         }
       }

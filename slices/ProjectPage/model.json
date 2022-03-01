@@ -31,6 +31,17 @@
           },
           "type": "Image"
         },
+        "ProjectDescriptionImage": {
+          "config": {
+            "label": "ProjectDescriptionImage",
+            "constraint": {
+              "width": 250,
+              "height": 500
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
         "description": {
           "type": "StructuredText",
           "config": {
@@ -39,6 +50,15 @@
             "allowTargetBlank": true,
             "multi": "paragraph"
           }
+        },
+        "SecondaryDescription": {
+          "config": {
+            "label": "SecondaryDescription",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
         },
         "githubRepoLink": {
           "config": {
@@ -56,9 +76,9 @@
           },
           "type": "Link"
         },
-        "ProjectImage2": {
+        "GithubRepoImage": {
           "config": {
-            "label": "ProjectImage2",
+            "label": "GithubRepoImage",
             "constraint": {
               "width": 250,
               "height": 250
@@ -67,9 +87,9 @@
           },
           "type": "Image"
         },
-        "ProjectImage3": {
+        "LiveSiteImage": {
           "config": {
-            "label": "ProjectImage3",
+            "label": "LiveSiteImage",
             "constraint": {
               "width": 250,
               "height": 250
