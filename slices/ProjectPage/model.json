@@ -35,8 +35,8 @@
           "config": {
             "label": "ProjectDescriptionImage",
             "constraint": {
-              "width": 250,
-              "height": 500
+              "width": 500,
+              "height": 250
             },
             "thumbnails": []
           },
@@ -76,28 +76,6 @@
           },
           "type": "Link"
         },
-        "GithubRepoImage": {
-          "config": {
-            "label": "GithubRepoImage",
-            "constraint": {
-              "width": 250,
-              "height": 250
-            },
-            "thumbnails": []
-          },
-          "type": "Image"
-        },
-        "LiveSiteImage": {
-          "config": {
-            "label": "LiveSiteImage",
-            "constraint": {
-              "width": 250,
-              "height": 250
-            },
-            "thumbnails": []
-          },
-          "type": "Image"
-        },
         "project": {
           "config": {
             "label": "project",
@@ -107,6 +85,15 @@
             "select": "document"
           },
           "type": "Link"
+        },
+        "TechnologyUsedAside": {
+          "config": {
+            "label": "TechnologyUsedAside",
+            "placeholder": "Technology",
+            "allowTargetBlank": true,
+            "multi": "image"
+          },
+          "type": "StructuredText"
         }
       },
       "items": {}

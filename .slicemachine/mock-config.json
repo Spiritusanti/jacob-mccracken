@@ -152,6 +152,12 @@
               "patternType": "PARAGRAPH",
               "blocks": 1
             }
+          },
+          "TechnologyUsedAside": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
           }
         }
       }
