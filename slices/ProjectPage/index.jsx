@@ -15,6 +15,22 @@ const ProjectPage = ({ slice }) => (
     </div>
     <article className={styles.gridWrapper}>
       <section className={styles.descriptionWrapper}>
+        <div className={styles.linkWrapper}>
+          <a
+            href={Link.url(slice.primary.githubRepoLink)}
+            target="_blank"
+            rel="noreferrer"
+          >
+            See it Live
+          </a>
+          <a
+            href={Link.url(slice.primary.LiveSiteLink)}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>
+        </div>
         <RichText render={slice.primary.description} />
         <div className={styles.descriptionImageWrapper}>
           <img
@@ -24,31 +40,9 @@ const ProjectPage = ({ slice }) => (
         </div>
         <RichText render={slice.primary.SecondaryDescription} />
       </section>
-      <aside className={styles.asideWrapper}>
-        <div className={styles.linkWrapper}>
-          <a
-            href={Link.url(slice.primary.LiveSiteLink)}
-            style={{
-              backgroundImage: `url(${slice.primary.GithubRepoImage.url})`,
-            }}
-            target="_blank"
-            rel="noreferrer"
-            title={slice.primary.GithubRepoImage.alt}
-          >
-            <h3>See the Repository</h3>
-          </a>
-          <a
-            href={Link.url(slice.primary.githubRepoLink)}
-            style={{
-              backgroundImage: `url(${slice.primary.LiveSiteImage.url})`,
-            }}
-            target="_blank"
-            rel="noreferrer"
-            title={slice.primary.LiveSiteImage.alt}
-          >
-            <h3>See it Live</h3>
-          </a>
-        </div>
+      <aside>
+          <h2>Technology</h2>
+          <RichText render={slice.primary.TechnologyUsedAside} />
       </aside>
     </article>
   </main>

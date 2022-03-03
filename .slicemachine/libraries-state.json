@@ -155,8 +155,8 @@
                   "config": {
                     "label": "ProjectDescriptionImage",
                     "constraint": {
-                      "width": 250,
-                      "height": 500
+                      "width": 500,
+                      "height": 250
                     },
                     "thumbnails": []
                   },
@@ -196,28 +196,6 @@
                   },
                   "type": "Link"
                 },
-                "GithubRepoImage": {
-                  "config": {
-                    "label": "GithubRepoImage",
-                    "constraint": {
-                      "width": 250,
-                      "height": 250
-                    },
-                    "thumbnails": []
-                  },
-                  "type": "Image"
-                },
-                "LiveSiteImage": {
-                  "config": {
-                    "label": "LiveSiteImage",
-                    "constraint": {
-                      "width": 250,
-                      "height": 250
-                    },
-                    "thumbnails": []
-                  },
-                  "type": "Image"
-                },
                 "project": {
                   "config": {
                     "label": "project",
@@ -227,6 +205,15 @@
                     "select": "document"
                   },
                   "type": "Link"
+                },
+                "TechnologyUsedAside": {
+                  "config": {
+                    "label": "TechnologyUsedAside",
+                    "placeholder": "Technology",
+                    "allowTargetBlank": true,
+                    "multi": "image"
+                  },
+                  "type": "StructuredText"
                 }
               },
               "items": {}
@@ -243,7 +230,7 @@
               "title": [
                 {
                   "type": "heading2",
-                  "text": "Monetize rich web-readiness",
+                  "text": "Whiteboard 24/7 models",
                   "spans": []
                 }
               ],
@@ -254,61 +241,50 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=1920&h=1080&fit=crop"
+                "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055?w=1920&h=1080&fit=crop"
               },
               "ProjectDescriptionImage": {
                 "dimensions": {
-                  "width": 250,
-                  "height": 500
+                  "width": 500,
+                  "height": 250
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=250&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=500&h=250&fit=crop"
               },
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Excepteur commodo nisi nostrud ut cillum irure culpa anim voluptate. In ea pariatur elit.",
+                  "text": "Labore voluptate qui in elit exercitation ipsum laborum do adipisicing.",
                   "spans": []
                 }
               ],
               "SecondaryDescription": [
                 {
                   "type": "paragraph",
-                  "text": "Esse et voluptate ullamco velit reprehenderit. In occaecat irure mollit adipisicing non aute et officia excepteur. Proident ex ipsum pariatur ad culpa ad.",
+                  "text": "Incididunt id ut velit magna elit dolore non ex ad ipsum ex minim. Qui nulla sit qui aliqua deserunt culpa incididunt laborum voluptate officia officia.",
                   "spans": []
                 }
               ],
               "githubRepoLink": {
                 "link_type": "Web",
-                "url": "http://google.com"
+                "url": "https://prismic.io"
               },
               "LiveSiteLink": {
                 "link_type": "Web",
                 "url": "http://twitter.com"
               },
-              "GithubRepoImage": {
-                "dimensions": {
-                  "width": 250,
-                  "height": 250
-                },
-                "alt": "Placeholder image",
-                "copyright": null,
-                "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e?w=250&h=250&fit=crop"
-              },
-              "LiveSiteImage": {
-                "dimensions": {
-                  "width": 250,
-                  "height": 250
-                },
-                "alt": "Placeholder image",
-                "copyright": null,
-                "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=250&h=250&fit=crop"
-              },
               "project": {
                 "link_type": "Web",
-                "url": "http://twitter.com"
-              }
+                "url": "http://google.com"
+              },
+              "TechnologyUsedAside": [
+                {
+                  "type": "paragraph",
+                  "text": "Aute quis amet cupidatat culpa tempor non aliquip.",
+                  "spans": []
+                }
+              ]
             }
           }
         },
@@ -321,7 +297,7 @@
           "default-slice": {
             "path": "C:\\Users\\mccra\\Documents\\webdev\\jacob-mccracken\\.slicemachine\\assets\\slices\\ProjectPage\\default-slice\\preview.png",
             "width": 800,
-            "height": 1217
+            "height": 919
           }
         }
       }
