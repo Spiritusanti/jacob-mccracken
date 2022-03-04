@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Image from "next/image";
-import Link from 'next/link';
 import placeholder from '../public/aquarium_current.jpg';
 
 const Home: NextPage = () => {
@@ -11,10 +10,10 @@ const Home: NextPage = () => {
         <div>
           {/* hero image */}
           <Image src={placeholder} layout="responsive" alt={"hero Image place holder"}></Image>
+          <h2>Hero Image Title</h2>
         </div>
         <div>
-          {/* hero image text */}
-          <h2>Hero Image Title</h2>
+          {/* hero image button */}
           <button>See My Work</button>
         </div>
       </section>
