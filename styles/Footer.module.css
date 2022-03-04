@@ -1,0 +1,22 @@
+.footer {
+    background-color: #303030;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.socialLinkWrapper {
+    display: flex;
+    gap: 1rem;
+    margin-left: 0.5rem;
+}
+
+.socialLinkWrapper a {
+    display: flex;
+    gap: 1rem;
+}
+
+.copyright {
+    margin-right: 0.5rem;
+}
