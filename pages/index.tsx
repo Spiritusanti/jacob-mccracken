@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Image from "next/image";
+import styles from '../styles/Home.module.css';
 import placeholder from '../public/aquarium_current.jpg';
 
 const Home: NextPage = () => {
@@ -7,10 +8,10 @@ const Home: NextPage = () => {
     <main>
       {/* hero section */}
       <section role={"heroSection"}>
-        <div>
-          {/* hero image */}
-          <Image src={placeholder} layout="responsive" alt={"hero Image place holder"}></Image>
-          <h2>Hero Image Title</h2>
+        <div title='hero image' style={{backgroundImage: `url(${placeholder.src})`}} className={styles.heroImageDiv}>
+          <div className={styles.heroImageTitleWrapper}>
+            <h2>Hero Image Title</h2>
+          </div>
         </div>
         <div>
           {/* hero image button */}
