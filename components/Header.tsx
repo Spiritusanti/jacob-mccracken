@@ -8,13 +8,13 @@ const Header: FC = () => {
     return (
         <header className={styles.header}>
             <div className={styles.logoWrapper}>
-                <Image src={placeholder} alt="placeholder image description" height={100} width={100} />
+                <Image src={placeholder} alt="placeholder image description" layout="responsive"/>
                 <h1>Jacob McCracken</h1>
             </div>
             <nav className={styles.navWrapper}>
                 <Link href={"/"}>Home</Link>
-                <Link href={"/about"}>About</Link>
                 <Link href={"/projects"}>Projects</Link>
+                <Link href={"/Resume"}>Resume</Link>
                 <Link href={"/contact"}>Contact</Link>
             </nav>
         </header>

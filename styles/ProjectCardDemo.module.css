@@ -20,7 +20,7 @@
     padding: 1.5rem;
     background: linear-gradient(
       hsl(0 0% 0%/0),
-      hsl(0 0% 0%/0.5) 15%,
+      hsl(0 0% 0%/0.5) 50%,
       hsl(0 0% 0%/1)
     );
   }

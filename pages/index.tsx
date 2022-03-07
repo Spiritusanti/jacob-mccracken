@@ -34,7 +34,7 @@ const Home: NextPage = () => {
         <div title='hero image' style={{ backgroundImage: `url(${placeholder.src})` }} className={styles.heroImageDiv}>
           <div className={styles.heroImageTitleWrapper}>
             <h2>Hero Image Title</h2>
-            <Link href="/#projects" as={"work-samples"}>See my work</Link>
+            <a href="#projects">See my work</a>
           </div>
         </div>
       </section>
@@ -51,6 +51,9 @@ const Home: NextPage = () => {
           <div className={styles.aboutSectionContentImageWrapper}>
             <Image src={placeholder} height={250} width={250} alt={"About Image placeholder"}></Image>
           </div>
+        </div>
+        <div className={styles.aboutSectionResumeLinkWrapper}>
+          <Link href="/resume">See my Resume</Link>
         </div>
       </section>
       <section role={"projectSection"} id="projects" className={styles.projectsSectionWrapper}>
