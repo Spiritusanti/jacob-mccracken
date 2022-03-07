@@ -17,6 +17,12 @@
     gap: 1rem;
 }
 
+.socialLinkWrapper a:hover,
+.socialLinkWrapper a:focus {
+    color: teal;
+    transform: scale(1.01);
+}
+
 .copyright {
     margin-right: 0.5rem;
 }

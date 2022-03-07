@@ -1,3 +1,12 @@
+:root {
+  --bs: 2px 2px 8px black;
+  --Image-gradient-overlay: linear-gradient(
+    45deg,
+    hsla(0, 100%, 0%, 0.5) 38%,
+    hsl(0, 50%, 0%, 0.1) 75%
+  );
+}
+
 html,
 body {
   padding: 0 1rem;
@@ -16,18 +25,14 @@ a {
   box-sizing: border-box;
 }
 
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
-      animation-timing-function: 0.01ms
-      !important;
-      animation-iteration-count: 1
-      !important;
-      transition-duration: 0.01ms
-      !important;
-      scroll-behavior: auto !important;
-      transition-delay: 0ms !important;
+    animation-timing-function: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0ms !important;
   }
 }
