@@ -26,3 +26,14 @@
 .copyright {
     margin-right: 0.5rem;
 }
+
+@media screen and (max-width: 500px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .socialLinkWrapper {
+        margin: 0 auto;
+    }
+}

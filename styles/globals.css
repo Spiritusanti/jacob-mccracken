@@ -36,3 +36,11 @@ a {
     transition-delay: 0ms !important;
   }
 }
+
+
+@media screen and (max-width: 800px) {
+  html,
+  body {
+    padding: 0.16rem;
+  }
+}

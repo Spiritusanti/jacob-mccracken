@@ -40,9 +40,11 @@ const ProjectPage = ({ slice }) => (
         </div>
         <RichText render={slice.primary.SecondaryDescription} />
       </section>
-      <aside>
+      <aside className={styles.asideWrapper}>
           <h2>Technology</h2>
-          <RichText render={slice.primary.TechnologyUsedAside} />
+          <div className={styles.asideSectionTechWrapper}>
+            <RichText render={slice.primary.TechnologyUsedAside} />
+          </div>
       </aside>
     </article>
   </main>
