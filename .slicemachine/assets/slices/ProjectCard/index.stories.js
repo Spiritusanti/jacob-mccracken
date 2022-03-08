@@ -5,5 +5,5 @@ export default {
 }
 
 
-export const _DefaultSlice = () => <MyComponent slice={{"variation":"default-slice","name":"Default slice","slice_type":"project_card","items":[],"primary":{"title":[{"type":"heading1","text":"Expedite B2C web-readiness","spans":[]}],"projectCardDescription":[{"type":"paragraph","text":"Tempor in ut culpa adipisicing laboris nulla exercitation deserunt non.","spans":[]}],"projectImage":{"dimensions":{"width":250,"height":250},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=250&h=250&fit=crop"},"project":{"link_type":"Web","url":"https://prismic.io"}},"id":"_DefaultSlice"}} />
+export const _DefaultSlice = () => <MyComponent slice={{"variation":"default-slice","name":"Default slice","slice_type":"project_card","items":[],"primary":{"title":[{"type":"heading1","text":"Matrix e-business experiences","spans":[]}],"projectCardDescription":[{"type":"paragraph","text":"Anim dolore dolor irure irure aliquip ut.","spans":[]}],"projectImage":{"dimensions":{"width":250,"height":250},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=250&h=250&fit=crop"},"project":{"link_type":"Web","url":"http://google.com"},"isFeaturedProject":false},"id":"_DefaultSlice"}} />
 _DefaultSlice.storyName = 'Default slice'
