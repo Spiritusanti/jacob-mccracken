@@ -198,6 +198,9 @@
               "patternType": "PARAGRAPH",
               "blocks": 1
             }
+          },
+          "isFeaturedProject": {
+            "content": false
           }
         }
       }
