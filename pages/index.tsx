@@ -1,5 +1,5 @@
 import type { GetStaticProps, NextPage } from 'next'
-import { createClient } from '../prismic';
+// import { createClient } from '../prismic';
 import Link from 'next/link';
 import Image from "next/image";
 import styles from '../styles/Home.module.css';
@@ -7,25 +7,25 @@ import placeholder from '../public/aquarium_current.jpg';
 import ProjectCard from "../slices/ProjectCard/index";
 
 
-interface HomeProps {
-  ProjectCards: []
-}
+// interface HomeProps {
+//   ProjectCards: []
+// }
 
 
-const getStaticProps: GetStaticProps = async ({ previewData }) => {
-  const client = createClient({ previewData });
+// const getStaticProps: GetStaticProps = async ({ previewData }) => {
+//   const client = createClient({ previewData });
 
-  const ProjectCards = await client.getAllByType("ProjectCard");
+//   const ProjectCards = await client.getAllByType("ProjectCard");
 
-  return {
-    props: { ProjectCards }
-  }
-}
+//   return {
+//     props: { ProjectCards }
+//   }
+// }
 
-const Home: NextPage<HomeProps> = (props) => {
+const Home: NextPage = () => {
 
-  const featuredProjectCards = props.ProjectCards;
-  console.log(featuredProjectCards);
+  // const featuredProjectCards = props.ProjectCards;
+  // console.log(featuredProjectCards);
   return (
     <main>
       {/* hero section */}
@@ -58,7 +58,7 @@ const Home: NextPage<HomeProps> = (props) => {
       <section role={"projectSection"} id="projects" className={styles.projectsSectionWrapper}>
         <h2>Selected Works</h2>
         <div className={styles.projectsGrid}>
-          {/* {featuredProjectCards.map((data) => <featuredProjectCards key={Math.random()} imageUrl={data.imageUrl} />)} */}
+          <p>no projects found</p>
         </div>
       </section>
     </main>
