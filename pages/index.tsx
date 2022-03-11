@@ -1,31 +1,32 @@
-import type { GetStaticProps, NextPage } from 'next'
-// import { createClient } from '../prismic';
+import type { NextPage } from 'next'
 import Link from 'next/link';
 import Image from "next/image";
 import styles from '../styles/Home.module.css';
 import placeholder from '../public/aquarium_current.jpg';
-import ProjectCard from "../slices/ProjectCard/index";
+import ProjectCard from '../components/ProjectCard-demo';
 
-
-// interface HomeProps {
-//   ProjectCards: []
-// }
-
-
-// const getStaticProps: GetStaticProps = async ({ previewData }) => {
-//   const client = createClient({ previewData });
-
-//   const ProjectCards = await client.getAllByType("ProjectCard");
-
-//   return {
-//     props: { ProjectCards }
-//   }
-// }
+const DummyData = [
+  {
+    imageUrl: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80"
+  },
+  {
+    imageUrl: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80"
+  },
+  {
+    imageUrl: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80"
+  },
+  {
+    imageUrl: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80"
+  },
+  {
+    imageUrl: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80"
+  },
+  {
+    imageUrl: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80"
+  }
+]
 
 const Home: NextPage = () => {
-
-  // const featuredProjectCards = props.ProjectCards;
-  // console.log(featuredProjectCards);
   return (
     <main>
       {/* hero section */}
@@ -58,7 +59,7 @@ const Home: NextPage = () => {
       <section role={"projectSection"} id="projects" className={styles.projectsSectionWrapper}>
         <h2>Selected Works</h2>
         <div className={styles.projectsGrid}>
-          <p>no projects found</p>
+          {DummyData.map((data) => <ProjectCard key={Math.random()} imageUrl={data.imageUrl} />)}
         </div>
       </section>
     </main>

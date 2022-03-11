@@ -49,15 +49,6 @@
             "select": "document"
           },
           "type": "Link"
-        },
-        "isFeaturedProject": {
-          "config": {
-            "label": "isFeaturedProject",
-            "placeholder_false": "false",
-            "placeholder_true": "true",
-            "default_value": false
-          },
-          "type": "Boolean"
         }
       },
       "items": {}
