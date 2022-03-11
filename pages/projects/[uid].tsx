@@ -10,9 +10,7 @@ interface ProjectProps {
     page: PrismicDocument;
 }
 
-interface Iparams extends ParsedUrlQuery {
-    uid: string
-}
+
 
 const components = {
     ProjectPage: Slices.ProjectPage,
@@ -28,6 +26,11 @@ export const getStaticPaths = async () => {
         }),
         fallback: true
     }
+}
+
+
+interface Iparams extends ParsedUrlQuery {
+    uid: string
 }
 
 export const getStaticProps: GetStaticProps = async ({ params, previewData }) => {
