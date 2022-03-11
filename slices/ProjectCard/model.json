@@ -1,0 +1,66 @@
+{
+  "id": "project_card",
+  "type": "SharedSlice",
+  "name": "ProjectCard",
+  "description": "ProjectCard",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ProjectCard",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "Project #",
+            "allowTargetBlank": true,
+            "single": "heading1,heading2"
+          }
+        },
+        "projectCardDescription": {
+          "config": {
+            "label": "projectCardDescription",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          },
+          "type": "StructuredText"
+        },
+        "projectImage": {
+          "config": {
+            "label": "projectImage",
+            "constraint": {
+              "width": 250,
+              "height": 250
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "project": {
+          "config": {
+            "label": "project",
+            "customtypes": [
+              "project"
+            ],
+            "select": "document"
+          },
+          "type": "Link"
+        },
+        "isFeaturedProject": {
+          "config": {
+            "label": "isFeaturedProject",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          },
+          "type": "Boolean"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

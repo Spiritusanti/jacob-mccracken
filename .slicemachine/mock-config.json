@@ -1,0 +1,214 @@
+{
+  "slices": {
+    "TextImageRight": {
+      "0": {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "text_image_right",
+        "items": [],
+        "primary": {
+          "textField": [
+            {
+              "type": "paragraph",
+              "text": "Et dolor fugiat pariatur ut. Voluptate voluptate ex excepteur adipisicing sint velit duis anim duis ipsum minim deserunt consectetur irure.",
+              "spans": []
+            }
+          ],
+          "image": {
+            "dimensions": {
+              "width": 250,
+              "height": 250
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1508385082359-f38ae991e8f2?w=250&h=250&fit=crop"
+          }
+        }
+      },
+      "1": {
+        "variation": "textImageLeft",
+        "name": "TextImageLeft",
+        "slice_type": "text_image_right",
+        "items": [],
+        "primary": {
+          "textField": [
+            {
+              "type": "paragraph",
+              "text": "Sint tempor veniam consectetur tempor esse est amet ex pariatur veniam reprehenderit sint.",
+              "spans": []
+            }
+          ],
+          "image": {
+            "dimensions": {
+              "width": 250,
+              "height": 250
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=250&h=250&fit=crop"
+          }
+        }
+      },
+      "2": {
+        "variation": "titleImage",
+        "name": "TitleImage",
+        "slice_type": "text_image_right",
+        "items": [],
+        "primary": {
+          "textField": [
+            {
+              "type": "paragraph",
+              "text": "Ad Lorem aliqua enim tempor quis ad.",
+              "spans": []
+            }
+          ],
+          "image": {
+            "dimensions": {
+              "width": 250,
+              "height": 250
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=250&h=250&fit=crop"
+          }
+        }
+      },
+      "default-slice": {
+        "primary": {}
+      }
+    },
+    "ProjectPage": {
+      "0": {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "project_page",
+        "items": [],
+        "primary": {
+          "title": [
+            {
+              "type": "heading2",
+              "text": "Enhance dynamic experiences",
+              "spans": []
+            }
+          ],
+          "ProjectHeroImage": {
+            "dimensions": {
+              "width": 250,
+              "height": 250
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=250&h=250&fit=crop"
+          },
+          "description": [
+            {
+              "type": "paragraph",
+              "text": "Elit pariatur fugiat aliquip voluptate duis fugiat labore eu.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Laborum minim nulla est aliquip reprehenderit.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Laborum proident mollit fugiat ullamco aute eiusmod anim enim nisi sunt reprehenderit minim ipsum.",
+              "spans": []
+            }
+          ],
+          "githubRepoLink": {
+            "link_type": "Web",
+            "url": "https://github.com/Spiritusanti"
+          },
+          "LiveSiteLink": {
+            "link_type": "Web",
+            "url": "https://google.com"
+          },
+          "ProjectImage2": {
+            "dimensions": {
+              "width": 250,
+              "height": 250
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=250&h=250&fit=crop"
+          },
+          "ProjectImage3": {
+            "dimensions": {
+              "width": 250,
+              "height": 250
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1472491235688-bdc81a63246e?w=250&h=250&fit=crop"
+          }
+        }
+      },
+      "default-slice": {
+        "primary": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "TechnologyUsedAside": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "ProjectCard": {
+      "0": {
+        "variation": "default-slice",
+        "name": "Default slice",
+        "slice_type": "project_card",
+        "items": [],
+        "primary": {
+          "title": [
+            {
+              "type": "heading1",
+              "text": "Facilitate mission-critical e-tailers",
+              "spans": []
+            }
+          ],
+          "projectImage": {
+            "dimensions": {
+              "width": 900,
+              "height": 500
+            },
+            "alt": "Placeholder image",
+            "copyright": null,
+            "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?w=900&h=500&fit=crop"
+          },
+          "project": {
+            "link_type": "Web",
+            "url": "https://slicemachine.dev"
+          }
+        }
+      },
+      "default-slice": {
+        "primary": {
+          "projectCardDescription": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "isFeaturedProject": {
+            "content": false
+          }
+        }
+      }
+    }
+  },
+  "_cts": {
+    "demo-type": {},
+    "project": {},
+    "ProjectCard": {}
+  }
+}
