@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "prismic.js", "pages/projects/[uid].tsx", "prismicio.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "prismic.js", "pages/projects/[uid].tsx", "prismicio.js", "pages/index.jsx"],
   "exclude": ["node_modules"]
 }

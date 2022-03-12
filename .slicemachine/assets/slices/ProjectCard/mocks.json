@@ -8,14 +8,14 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Matrix e-business experiences",
+          "text": "Redefine one-to-one mindshare",
           "spans": []
         }
       ],
       "projectCardDescription": [
         {
           "type": "paragraph",
-          "text": "Anim dolore dolor irure irure aliquip ut.",
+          "text": "Excepteur duis exercitation minim. Consequat ullamco sint exercitation ad exercitation esse.",
           "spans": []
         }
       ],
@@ -26,13 +26,13 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=250&h=250&fit=crop"
+        "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=250&h=250&fit=crop"
       },
       "project": {
         "link_type": "Web",
-        "url": "http://google.com"
+        "url": "http://twitter.com"
       },
-      "isFeaturedProject": false
+      "isFeaturedProject": true
     }
   }
 ]

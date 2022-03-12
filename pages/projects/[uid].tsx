@@ -3,18 +3,11 @@ import { PrismicDocument } from '@prismicio/types';
 import { FC } from 'react';
 import { GetStaticProps } from 'next';
 import { SliceZone } from '@prismicio/react';
-import * as Slices from '../../slices';
 import { ParsedUrlQuery } from 'querystring';
+import { components } from "../../slices/index";
 
 interface ProjectProps {
     page: PrismicDocument;
-}
-
-
-
-const components = {
-    ProjectPage: Slices.ProjectPage,
-    ProjectCard: Slices.ProjectCard,
 }
 
 export const getStaticPaths = async () => {
@@ -47,10 +40,20 @@ export const getStaticProps: GetStaticProps = async ({ params, previewData }) =>
 
 const Project: FC<ProjectProps> = (props) => {
     const { page } = props;
+
+
+    let content;
+    if(page) {
+        content = <SliceZone slices={page.data.body} components={components} />
+    }
+
+    if(page === undefined) {
+        content = <h1>Loading....</h1>
+    }
+
     return (
         <div>
-            Out of Order!
-            {/* <SliceZone slices={page.data.body} components={components} /> */}
+            {content}
         </div>
     )
 }
