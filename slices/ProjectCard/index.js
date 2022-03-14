@@ -4,7 +4,7 @@ import { Link } from "prismic-reactjs";
 import styles from "./styles.module.css";
 
 const ProjectCard = ({ slice }) => (
-  <a href={Link.url(slice.primary.project)} passHref>
+  <a href={Link.url(slice.primary.project)}>
     <div
       className={styles.projectCard}
       style={{ backgroundImage: `url(${slice.primary.projectImage.url})` }}

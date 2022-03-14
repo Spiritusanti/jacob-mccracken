@@ -8,14 +8,14 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Redefine one-to-one mindshare",
+          "text": "Deploy granular content",
           "spans": []
         }
       ],
       "projectCardDescription": [
         {
           "type": "paragraph",
-          "text": "Excepteur duis exercitation minim. Consequat ullamco sint exercitation ad exercitation esse.",
+          "text": "Incididunt excepteur sunt ea pariatur nisi eiusmod exercitation elit. Officia quis commodo labore minim culpa reprehenderit laborum reprehenderit laboris incididunt cupidatat ipsum officia commodo. Irure magna id consectetur ut dolore.",
           "spans": []
         }
       ],
@@ -26,13 +26,12 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=250&h=250&fit=crop"
+        "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=250&h=250&fit=crop"
       },
       "project": {
         "link_type": "Web",
-        "url": "http://twitter.com"
-      },
-      "isFeaturedProject": true
+        "url": "https://slicemachine.dev"
+      }
     }
   }
 ]
