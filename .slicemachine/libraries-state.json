@@ -73,14 +73,14 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Deploy granular content",
+                  "text": "Engage dynamic markets",
                   "spans": []
                 }
               ],
               "projectCardDescription": [
                 {
                   "type": "paragraph",
-                  "text": "Incididunt excepteur sunt ea pariatur nisi eiusmod exercitation elit. Officia quis commodo labore minim culpa reprehenderit laborum reprehenderit laboris incididunt cupidatat ipsum officia commodo. Irure magna id consectetur ut dolore.",
+                  "text": "Deserunt laboris nostrud culpa aute nisi in cillum ipsum pariatur nisi consectetur tempor. Officia nostrud eu quis commodo elit aute amet proident incididunt. Exercitation irure voluptate esse ut ea magna qui.",
                   "spans": []
                 }
               ],
@@ -91,11 +91,11 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=250&h=250&fit=crop"
+                "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=250&h=250&fit=crop"
               },
               "project": {
                 "link_type": "Web",
-                "url": "https://slicemachine.dev"
+                "url": "http://google.com"
               }
             }
           }
@@ -109,7 +109,7 @@
           "default-slice": {
             "path": "C:\\Users\\mccra\\Documents\\webdev\\jacob-mccracken\\.slicemachine\\assets\\slices\\ProjectCard\\default-slice\\preview.png",
             "width": 800,
-            "height": 521
+            "height": 500
           }
         }
       },

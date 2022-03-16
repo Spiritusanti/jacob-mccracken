@@ -2,19 +2,24 @@ import React from "react";
 import { RichText } from "prismic-reactjs";
 import { Link } from "prismic-reactjs";
 import styles from "./styles.module.css";
+import { useRouter } from "next/router";
 
-const ProjectCard = ({ slice }) => (
-  <a href={Link.url(slice.primary.project)}>
-    <div
-      className={styles.projectCard}
-      style={{ backgroundImage: `url(${slice.primary.projectImage.url})` }}
-    >
-      <div className={styles.projectCardContentWrapper}>
-        <RichText render={slice.primary.title} />
-        <RichText render={slice.primary.projectCardDescription} />
+const ProjectCard = ({ slice }) => {
+  const router = useRouter();
+  console.log(router.pathname);
+  return (
+    <a href={Link.url(slice.primary.project)}>
+      <div
+        className={styles.projectCard}
+        style={{ backgroundImage: `url(${slice.primary.projectImage.url})` }}
+      >
+        <div className={styles.projectCardContentWrapper}>
+          <RichText render={slice.primary.title} />
+          <RichText render={slice.primary.projectCardDescription} />
+        </div>
       </div>
-    </div>
-  </a>
-);
+    </a>
+  );
+};
 
 export default ProjectCard;
