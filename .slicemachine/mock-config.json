@@ -201,11 +201,66 @@
           }
         }
       }
+    },
+    "ResumeSlice": {
+      "default": {
+        "primary": {
+          "Name": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "ObjectiveSection": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "ResumeExperienceSlice": {
+      "default": {
+        "primary": {
+          "Experience": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "WorkExperienceDescription": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "ResumeEducationSlice": {
+      "default": {
+        "primary": {
+          "Education": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "EducationDescription": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
     }
   },
   "_cts": {
     "demo-type": {},
     "project": {},
-    "ProjectCard": {}
+    "ProjectCard": {},
+    "resume": {}
   }
 }

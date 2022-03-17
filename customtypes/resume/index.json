@@ -1,0 +1,27 @@
+{
+  "id": "resume",
+  "label": "ResumePage",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "resume_slice": {
+              "type": "SharedSlice"
+            },
+            "resume_experience_slice": {
+              "type": "SharedSlice"
+            },
+            "resume_education_slice": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

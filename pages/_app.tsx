@@ -8,10 +8,11 @@ import { linkResolver } from "../prismicio";
 import Link from 'next/link'
 
 
+
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <PrismicProvider
-      linkResolver={linkResolver}
+    <PrismicProvider linkResolver={linkResolver}
       internalLinkComponent={({ href, children, ...props }) => (
         <Link href={href}>
           <a {...props}>

@@ -1,7 +1,5 @@
 import { FC } from "react"
 import styles from '../styles/Footer.module.css';
-import Image from "next/image";
-import placeholderImage from '../public/aquarium_current.jpg';
 
 const Footer: FC = () => {
     return (

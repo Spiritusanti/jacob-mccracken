@@ -300,6 +300,240 @@
             "height": 919
           }
         }
+      },
+      "resume_education_slice": {
+        "library": "slices",
+        "id": "resume_education_slice",
+        "name": "ResumeEducationSlice",
+        "description": "ResumeEducationSlice",
+        "model": {
+          "id": "resume_education_slice",
+          "type": "SharedSlice",
+          "name": "ResumeEducationSlice",
+          "description": "ResumeEducationSlice",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ResumeEducationSlice",
+              "primary": {
+                "Education": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Education",
+                    "placeholder": "Education",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "EducationDescription": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "EducationDescription",
+                    "placeholder": "Highlight your education",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph"
+                  }
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "resume_education_slice",
+            "items": [],
+            "primary": {
+              "Education": [
+                {
+                  "type": "heading2",
+                  "text": "Utilize revolutionary action-items",
+                  "spans": []
+                }
+              ],
+              "EducationDescription": [
+                {
+                  "type": "paragraph",
+                  "text": "Enim dolore officia tempor sunt anim dolor irure in proident aliquip nulla ipsum excepteur culpa. Ad ex incididunt deserunt occaecat sunt deserunt pariatur labore minim officia. Proident fugiat officia ex ipsum quis ut.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "C:\\Users\\mccra\\Documents\\webdev\\jacob-mccracken\\.slicemachine\\assets\\slices\\ResumeEducationSlice\\default\\preview.png",
+            "width": 800,
+            "height": 73
+          }
+        }
+      },
+      "resume_experience_slice": {
+        "library": "slices",
+        "id": "resume_experience_slice",
+        "name": "ResumeExperienceSlice",
+        "description": "ResumeExperienceSlice",
+        "model": {
+          "id": "resume_experience_slice",
+          "type": "SharedSlice",
+          "name": "ResumeExperienceSlice",
+          "description": "ResumeExperienceSlice",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ResumeExperienceSlice",
+              "primary": {
+                "Experience": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Experience",
+                    "placeholder": "Work Experience",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "WorkExperienceDescription": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "WorkExperienceDescription",
+                    "placeholder": "A description of work experience",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "resume_experience_slice",
+            "items": [],
+            "primary": {
+              "Experience": [
+                {
+                  "type": "heading2",
+                  "text": "Utilize best-of-breed systems",
+                  "spans": []
+                }
+              ],
+              "WorkExperienceDescription": [
+                {
+                  "type": "paragraph",
+                  "text": "Veniam voluptate aliqua qui enim non aliquip.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "C:\\Users\\mccra\\Documents\\webdev\\jacob-mccracken\\.slicemachine\\assets\\slices\\ResumeExperienceSlice\\default\\preview.png",
+            "width": 800,
+            "height": 73
+          }
+        }
+      },
+      "resume_slice": {
+        "library": "slices",
+        "id": "resume_slice",
+        "name": "ResumeSlice",
+        "description": "ResumeSlice",
+        "model": {
+          "id": "resume_slice",
+          "type": "SharedSlice",
+          "name": "ResumeSlice",
+          "description": "ResumeSlice",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ResumeSlice",
+              "primary": {
+                "Name": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Name",
+                    "placeholder": "Jacob McCracken",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "ObjectiveSection": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "ObjectiveSection",
+                    "placeholder": "Lorem Ipsum.",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "resume_slice",
+            "items": [],
+            "primary": {
+              "Name": [
+                {
+                  "type": "heading2",
+                  "text": "Aggregate extensible e-markets",
+                  "spans": []
+                }
+              ],
+              "ObjectiveSection": [
+                {
+                  "type": "paragraph",
+                  "text": "Reprehenderit quis Lorem mollit ex officia minim magna cupidatat eu duis.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "C:\\Users\\mccra\\Documents\\webdev\\jacob-mccracken\\.slicemachine\\assets\\slices\\ResumeSlice\\default\\preview.png",
+            "width": 800,
+            "height": 73
+          }
+        }
       }
     }
   }
