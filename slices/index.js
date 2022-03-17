@@ -2,13 +2,22 @@
 
 import ProjectCard from './ProjectCard';
 import ProjectPage from './ProjectPage';
+import ResumeEducationSlice from './ResumeEducationSlice';
+import ResumeExperienceSlice from './ResumeExperienceSlice';
+import ResumeSlice from './ResumeSlice';
 
 export {
 	ProjectCard,
 	ProjectPage,
+	ResumeEducationSlice,
+	ResumeExperienceSlice,
+	ResumeSlice,
 };
 
 export const components = {
 	project_card: ProjectCard,
 	project_page: ProjectPage,
+	resume_education_slice: ResumeEducationSlice,
+	resume_experience_slice: ResumeExperienceSlice,
+	resume_slice: ResumeSlice,
 };

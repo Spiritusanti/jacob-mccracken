@@ -1,0 +1,36 @@
+{
+  "id": "resume_education_slice",
+  "type": "SharedSlice",
+  "name": "ResumeEducationSlice",
+  "description": "ResumeEducationSlice",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ResumeEducationSlice",
+      "primary": {
+        "Education": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Education",
+            "placeholder": "Education",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "EducationDescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "EducationDescription",
+            "placeholder": "Highlight your education",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

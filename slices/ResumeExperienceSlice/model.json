@@ -1,0 +1,36 @@
+{
+  "id": "resume_experience_slice",
+  "type": "SharedSlice",
+  "name": "ResumeExperienceSlice",
+  "description": "ResumeExperienceSlice",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ResumeExperienceSlice",
+      "primary": {
+        "Experience": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Experience",
+            "placeholder": "Work Experience",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "WorkExperienceDescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "WorkExperienceDescription",
+            "placeholder": "A description of work experience",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
