@@ -1,0 +1,19 @@
+.resumeTitle {
+  padding: 0;
+  margin: 0;
+}
+
+.resumeTitle h2 {
+  padding: 0;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.resumeTitle::after {
+  content: "";
+  display: block;
+  margin-left: 1rem;
+  background-color: black;
+  width: 95%;
+  height: 0.25rem;
+}

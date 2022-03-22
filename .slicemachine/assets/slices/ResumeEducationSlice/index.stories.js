@@ -5,5 +5,5 @@ export default {
 }
 
 
-export const _Default = () => <MyComponent slice={{"variation":"default","name":"Default","slice_type":"resume_education_slice","items":[],"primary":{"Education":[{"type":"heading2","text":"Utilize revolutionary action-items","spans":[]}],"EducationDescription":[{"type":"paragraph","text":"Enim dolore officia tempor sunt anim dolor irure in proident aliquip nulla ipsum excepteur culpa. Ad ex incididunt deserunt occaecat sunt deserunt pariatur labore minim officia. Proident fugiat officia ex ipsum quis ut.","spans":[]}]},"id":"_Default"}} />
+export const _Default = () => <MyComponent slice={{"variation":"default","name":"Default","slice_type":"resume_education_slice","items":[],"primary":{"schoolLogo":{"dimensions":{"width":50,"height":50},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=50&h=50&fit=crop"},"Education":[{"type":"heading2","text":"Benchmark turn-key eyeballs","spans":[]}],"EducationDescription":[{"type":"paragraph","text":"Sunt veniam elit consectetur commodo incididunt commodo incididunt. Non ipsum anim aliqua eiusmod ea est adipisicing sit. Officia deserunt aliqua cillum dolore nulla officia veniam labore elit cillum qui fugiat fugiat anim.","spans":[]}]},"id":"_Default"}} />
 _Default.storyName = 'Default'

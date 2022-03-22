@@ -5,6 +5,7 @@ import ProjectPage from './ProjectPage';
 import ResumeEducationSlice from './ResumeEducationSlice';
 import ResumeExperienceSlice from './ResumeExperienceSlice';
 import ResumeSlice from './ResumeSlice';
+import ResumeTitle from './ResumeTitle';
 
 export {
 	ProjectCard,
@@ -12,6 +13,7 @@ export {
 	ResumeEducationSlice,
 	ResumeExperienceSlice,
 	ResumeSlice,
+	ResumeTitle,
 };
 
 export const components = {
@@ -20,4 +22,5 @@ export const components = {
 	resume_education_slice: ResumeEducationSlice,
 	resume_experience_slice: ResumeExperienceSlice,
 	resume_slice: ResumeSlice,
+	resume_title: ResumeTitle,
 };

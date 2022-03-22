@@ -11,6 +11,17 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "ResumeEducationSlice",
       "primary": {
+        "schoolLogo": {
+          "config": {
+            "label": "School Logo",
+            "constraint": {
+              "width": 50,
+              "height": 50
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
         "Education": {
           "type": "StructuredText",
           "config": {

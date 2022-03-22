@@ -1,0 +1,35 @@
+.experienceSection {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.logoWrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.logoWrapper img {
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.content h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.content h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: .25rem;
+    background: teal;
+}
+
+.experienceSection p {
+    font-size: .9rem;
+    color: rgba(0, 0, 0, 0.7);
+}
