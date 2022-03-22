@@ -20,6 +20,17 @@
             "single": "heading2"
           }
         },
+        "companyLogo": {
+          "config": {
+            "label": "Company Logo",
+            "constraint": {
+              "width": 50,
+              "height": 50
+            },
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
         "WorkExperienceDescription": {
           "type": "StructuredText",
           "config": {

@@ -319,6 +319,17 @@
               "version": "sktwi1xtmkfgx8626",
               "description": "ResumeEducationSlice",
               "primary": {
+                "schoolLogo": {
+                  "config": {
+                    "label": "School Logo",
+                    "constraint": {
+                      "width": 50,
+                      "height": 50
+                    },
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                },
                 "Education": {
                   "type": "StructuredText",
                   "config": {
@@ -349,17 +360,26 @@
             "slice_type": "resume_education_slice",
             "items": [],
             "primary": {
+              "schoolLogo": {
+                "dimensions": {
+                  "width": 50,
+                  "height": 50
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=50&h=50&fit=crop"
+              },
               "Education": [
                 {
                   "type": "heading2",
-                  "text": "Utilize revolutionary action-items",
+                  "text": "Benchmark turn-key eyeballs",
                   "spans": []
                 }
               ],
               "EducationDescription": [
                 {
                   "type": "paragraph",
-                  "text": "Enim dolore officia tempor sunt anim dolor irure in proident aliquip nulla ipsum excepteur culpa. Ad ex incididunt deserunt occaecat sunt deserunt pariatur labore minim officia. Proident fugiat officia ex ipsum quis ut.",
+                  "text": "Sunt veniam elit consectetur commodo incididunt commodo incididunt. Non ipsum anim aliqua eiusmod ea est adipisicing sit. Officia deserunt aliqua cillum dolore nulla officia veniam labore elit cillum qui fugiat fugiat anim.",
                   "spans": []
                 }
               ]
@@ -375,7 +395,7 @@
           "default": {
             "path": "C:\\Users\\mccra\\Documents\\webdev\\jacob-mccracken\\.slicemachine\\assets\\slices\\ResumeEducationSlice\\default\\preview.png",
             "width": 800,
-            "height": 73
+            "height": 141
           }
         }
       },
@@ -406,6 +426,17 @@
                     "single": "heading2"
                   }
                 },
+                "companyLogo": {
+                  "config": {
+                    "label": "Company Logo",
+                    "constraint": {
+                      "width": 50,
+                      "height": 50
+                    },
+                    "thumbnails": []
+                  },
+                  "type": "Image"
+                },
                 "WorkExperienceDescription": {
                   "type": "StructuredText",
                   "config": {
@@ -430,14 +461,23 @@
               "Experience": [
                 {
                   "type": "heading2",
-                  "text": "Utilize best-of-breed systems",
+                  "text": "Embrace cross-platform functionalities",
                   "spans": []
                 }
               ],
+              "companyLogo": {
+                "dimensions": {
+                  "width": 50,
+                  "height": 50
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=50&h=50&fit=crop"
+              },
               "WorkExperienceDescription": [
                 {
                   "type": "paragraph",
-                  "text": "Veniam voluptate aliqua qui enim non aliquip.",
+                  "text": "Dolore officia incididunt exercitation laboris minim. Aute magna laboris excepteur sint esse. Veniam id Lorem dolor aliquip ullamco magna Lorem ullamco qui officia est adipisicing voluptate.",
                   "spans": []
                 }
               ]
@@ -453,7 +493,7 @@
           "default": {
             "path": "C:\\Users\\mccra\\Documents\\webdev\\jacob-mccracken\\.slicemachine\\assets\\slices\\ResumeExperienceSlice\\default\\preview.png",
             "width": 800,
-            "height": 73
+            "height": 137
           }
         }
       },
@@ -531,7 +571,69 @@
           "default": {
             "path": "C:\\Users\\mccra\\Documents\\webdev\\jacob-mccracken\\.slicemachine\\assets\\slices\\ResumeSlice\\default\\preview.png",
             "width": 800,
-            "height": 73
+            "height": 105
+          }
+        }
+      },
+      "resume_title": {
+        "library": "slices",
+        "id": "resume_title",
+        "name": "ResumeTitle",
+        "description": "ResumeTitle",
+        "model": {
+          "id": "resume_title",
+          "type": "SharedSlice",
+          "name": "ResumeTitle",
+          "description": "ResumeTitle",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "ResumeTitle",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Resume Section Title",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                }
+              },
+              "items": {}
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "resume_title",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading2",
+                  "text": "Enable B2C initiatives",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "isDirectory": true,
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "C:\\Users\\mccra\\Documents\\webdev\\jacob-mccracken\\.slicemachine\\assets\\slices\\ResumeTitle\\default\\preview.png",
+            "width": 800,
+            "height": 36
           }
         }
       }

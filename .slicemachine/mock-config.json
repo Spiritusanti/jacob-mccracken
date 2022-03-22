@@ -234,6 +234,9 @@
               "patternType": "PARAGRAPH",
               "blocks": 1
             }
+          },
+          "companyLogo": {
+            "content": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df"
           }
         }
       }
@@ -250,6 +253,21 @@
           "EducationDescription": {
             "config": {
               "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "schoolLogo": {
+            "content": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05"
+          }
+        }
+      }
+    },
+    "ResumeTitle": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
               "blocks": 1
             }
           }

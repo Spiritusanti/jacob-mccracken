@@ -14,7 +14,7 @@ const Header: FC = () => {
             <nav className={styles.navWrapper}>
                 <Link href={"/"}>Home</Link>
                 <Link href={"/projects"}>Projects</Link>
-                <Link href={"/Resume"}>Resume</Link>
+                <Link href={"/resume"}>Resume</Link>
                 <Link href={"/contact"}>Contact</Link>
             </nav>
         </header>

@@ -1,15 +1,12 @@
 import React from "react";
 import { RichText } from "prismic-reactjs";
+import styles from "./styles.module.css"
 
 const ResumeSlice = ({ slice }) => (
-  <section>
-    <div>
-      <RichText render={slice.primary.Name} />
-    </div>
-    <br />
-    <div>
+  <section className={styles.resumeTitleSection}>
+    <p>
       <RichText render={slice.primary.ObjectiveSection} />
-    </div>
+    </p>
   </section>
 );
 
