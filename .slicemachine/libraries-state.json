@@ -57,6 +57,15 @@
                     "select": "document"
                   },
                   "type": "Link"
+                },
+                "HighlightedProject": {
+                  "config": {
+                    "label": "Highlighted Project",
+                    "placeholder_false": "false",
+                    "placeholder_true": "true",
+                    "default_value": false
+                  },
+                  "type": "Boolean"
                 }
               },
               "items": {}
@@ -73,14 +82,14 @@
               "title": [
                 {
                   "type": "heading1",
-                  "text": "Engage dynamic markets",
+                  "text": "Engineer world-class partnerships",
                   "spans": []
                 }
               ],
               "projectCardDescription": [
                 {
                   "type": "paragraph",
-                  "text": "Deserunt laboris nostrud culpa aute nisi in cillum ipsum pariatur nisi consectetur tempor. Officia nostrud eu quis commodo elit aute amet proident incididunt. Exercitation irure voluptate esse ut ea magna qui.",
+                  "text": "Pariatur aute magna proident reprehenderit officia qui veniam minim ullamco ea.",
                   "spans": []
                 }
               ],
@@ -91,12 +100,13 @@
                 },
                 "alt": "Placeholder image",
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=250&h=250&fit=crop"
+                "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=250&h=250&fit=crop"
               },
               "project": {
                 "link_type": "Web",
-                "url": "http://google.com"
-              }
+                "url": "https://slicemachine.dev"
+              },
+              "HighlightedProject": false
             }
           }
         },
@@ -109,7 +119,7 @@
           "default-slice": {
             "path": "C:\\Users\\mccra\\Documents\\webdev\\jacob-mccracken\\.slicemachine\\assets\\slices\\ProjectCard\\default-slice\\preview.png",
             "width": 800,
-            "height": 500
+            "height": 459
           }
         }
       },
