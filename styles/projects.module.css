@@ -1,0 +1,22 @@
+.projectPageSection {
+padding: 1rem 0;
+}
+
+.titleDiv {
+    background: #303030;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--bs);
+}
+
+.titleDiv h2 {
+    padding: 0;
+    margin: 0;
+}
+
+
+.projectFlexWrapper {
+    display: flex;
+}

@@ -49,6 +49,15 @@
             "select": "document"
           },
           "type": "Link"
+        },
+        "HighlightedProject": {
+          "config": {
+            "label": "Highlighted Project",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          },
+          "type": "Boolean"
         }
       },
       "items": {}
