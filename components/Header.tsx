@@ -1,4 +1,4 @@
-import placeholder from "../public/aquarium_current.jpg";
+import Logo from '../public/logo.png'
 import Link from "next/link";
 import Image from "next/image";
 import { FC } from "react";
@@ -8,13 +8,15 @@ const Header: FC = () => {
     return (
         <header className={styles.header}>
             <div className={styles.logoWrapper}>
-                <Image src={placeholder} alt="placeholder image description" layout="responsive"/>
-                <h1>Jacob McCracken</h1>
+                <div className={styles.logoImage}>
+                    <Image src={Logo} alt="McCrackenDev Logo" layout="responsive"/>
+                </div>
+                <h1>McCrackenDev</h1>
             </div>
             <nav className={styles.navWrapper}>
                 <Link href={"/"}>Home</Link>
                 <Link href={"/projects"}>Projects</Link>
-                <Link href={"/resume"}>Resume</Link>
+                <Link href={"/testimonials"}>Testimonials</Link>
                 <Link href={"/contact"}>Contact</Link>
             </nav>
         </header>
