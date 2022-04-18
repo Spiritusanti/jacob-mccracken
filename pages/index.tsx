@@ -75,9 +75,6 @@ const Home: FC<HomeProps> = (props) => {
             ></Image>
           </div>
         </div>
-        <div className={styles.aboutSectionResumeLinkWrapper}>
-          <Link href="/resume">See my Resume</Link>
-        </div>
       </section>
       <section
         role={"projectSection"}

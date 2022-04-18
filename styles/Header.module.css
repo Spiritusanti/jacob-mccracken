@@ -1,46 +1,56 @@
 .header {
-    margin: 0 auto;
-    margin-bottom: 2em;
-    padding: 0;
-    padding-top: 1em;
-    display: flex;
-    justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  padding: 0;
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Logo and h1 styles */
 
 .logoWrapper {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.logoImage {
+  height: 75px;
+  width: 75px;
+  padding: 0;
+  margin: 0;
+}
+
+.logoImage img {
+    border-radius: 5px;
 }
 
 .logoWrapper h1 {
-    padding: 0;
-    padding-top: 3rem;
-    margin: 0;
+  padding: 0;
+  padding-top: 3rem;
+  margin: 0;
 }
 
 /* nav styles */
 
 .navWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 1em;
-    font-size: 1.15rem;
-    font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1em;
+  font-size: 1.15rem;
+  font-weight: bold;
 }
 
 .navWrapper a:hover,
 .navWrapper a:focus {
-    transform: scale(1.01);
-    color: teal;
+  transform: scale(1.01);
+  color: teal;
 }
-
 
 @media screen and (max-width: 800px) {
-    .header {
-        flex-direction: column;
-    }
+  .header {
+    flex-direction: column;
+  }
 }
-

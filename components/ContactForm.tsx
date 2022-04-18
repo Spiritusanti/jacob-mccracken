@@ -1,19 +1,26 @@
 import { FC } from "react";
+import styles from '../styles/ContactForm.module.css';
 
 const ContactForm: FC = () => {
     return (
-        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-            <p>
-                <label>Your Name: <input type="text" name="name" /></label>
-            </p>
-            <p>
-                <label>Your Email: <input type="email" name="email" /></label>
-            </p>
-            <p>
-                <label>Message: <textarea name="message" /></label>
+        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" className={styles.form}>
+            <h2>Contact me:</h2>
+            <p className={styles.formInputsWrapper} >
+                <p className={styles.input}>
+                    <label htmlFor="name">Your Name: </label>
+                    <input type="text" name="name" id="name" />
+                </p>
+                <p className={styles.input}>
+                    <label htmlFor="email">Your Email: </label>
+                    <input type="email" name="email" id="email" />
+                </p>
+                <p className={styles.textareaWrapper}>
+                    <label htmlFor="message">Message: </label>
+                    <textarea cols={50} rows={10} name="message" id="message" />
+                </p>
             </p>
             <div data-netlify-recaptcha="true"></div>
-            <p>
+            <p className={styles.buttonWrapper}>
                 <button type="submit">Send</button>
             </p>
         </form>
