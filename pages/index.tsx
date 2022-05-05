@@ -1,5 +1,4 @@
 import { createClient } from "../prismicio";
-import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import placeholder from "../public/aquarium_current.jpg";
@@ -8,6 +7,7 @@ import { components } from "../slices";
 import { GetStaticProps } from "next";
 import { PrismicDocument } from "@prismicio/types";
 import { FC } from "react";
+import HeroSection from "../components/HeroSection";
 
 export const getStaticProps: GetStaticProps = async ({ previewData }) => {
   const client = createClient({ previewData });
@@ -29,18 +29,7 @@ const Home: FC<HomeProps> = (props) => {
   return (
     <main>
       {/* hero section */}
-      <section role={"heroSection"}>
-        <div
-          title="hero image"
-          style={{ backgroundImage: `url(${placeholder.src})` }}
-          className={styles.heroImageDiv}
-        >
-          <div className={styles.heroImageTitleWrapper}>
-            <h2>Hero Image Title</h2>
-            <a href="#projects">See my work</a>
-          </div>
-        </div>
-      </section>
+      <HeroSection />
       <section role={"aboutSection"} className={styles.aboutSectionWrapper}>
         <div className={styles.aboutTitle}>
           <h2>Who is me?</h2>

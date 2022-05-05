@@ -1,6 +1,6 @@
-# Personal Website
+# McCrackenDev.com website
 ## purpose:
-Needed a new portfolio site that is easier to update than my current hard-coded portfolio (https://spiritusanti.github.io/JacobMcCracken/). The goal of this new site is to allow for faster updating by leveraging the power of a CMS, Prismic in this case. 
+Portfolio and website for McCrackenDev. This site exists as a hub for all services and products offered by McCrackenDev. 
 
 ## Technologies used:
 Next.Js, TypeScript, Prismic, and Netlify.
