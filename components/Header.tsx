@@ -1,4 +1,4 @@
-import Logo from '../public/logo.png'
+import Logo from '../public/logo_transparent.png'
 import Link from "next/link";
 import Image from "next/image";
 import { FC } from "react";
