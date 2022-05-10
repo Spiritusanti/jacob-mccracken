@@ -7,12 +7,14 @@ import styles from '../styles/Header.module.css';
 const Header: FC = () => {
     return (
         <header className={styles.header}>
-            <div className={styles.logoWrapper}>
-                <div className={styles.logoImage}>
-                    <Image src={Logo} alt="McCrackenDev Logo" layout="responsive"/>
+            <Link href={"/"} passHref>
+                <div className={styles.logoWrapper}>
+                    <div className={styles.logoImage}>
+                        <Image src={Logo} alt="McCrackenDev Logo" layout="responsive"/>
+                    </div>
+                    <h1>McCrackenDev</h1>
                 </div>
-                <h1>McCrackenDev</h1>
-            </div>
+            </Link>
             <nav className={styles.navWrapper}>
                 <Link href={"/"}>Home</Link>
                 <Link href={"/projects"}>Projects</Link>

@@ -1,35 +1,44 @@
-import { createClient } from "../prismicio";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import placeholder from "../public/aquarium_current.jpg";
-import { SliceZone } from "@prismicio/react";
-import { components } from "../slices";
-import { GetStaticProps } from "next";
-import { PrismicDocument } from "@prismicio/types";
 import { FC } from "react";
 import HeroSection from "../components/HeroSection";
+import { GetStaticProps } from 'next'
+import { fetchEntries, fetchSingleEntry } from "../contentfulUtils";
+import ProductCard from "../components/ProductCard";
+import { Entry } from "contentful";
 
-export const getStaticProps: GetStaticProps = async ({ previewData }) => {
-  const client = createClient({ previewData });
-  const projectCards = await client
-    .getAllByType("ProjectCard")
-    .catch((error) => console.error(error));
+import { useState, useEffect } from "react";
+
+export const getStaticProps: GetStaticProps = async () => {
+  const cards = await fetchEntries("productCard");
+  const homepageHero = await fetchSingleEntry("hP2lWaaGxu582mwm4brcy");
   return {
-    props: {
-      projectCards,
-    },
-  };
-};
-
-interface HomeProps {
-  projectCards: PrismicDocument[]
+    props: { cards: cards, hero: homepageHero }
+  }
 }
 
-const Home: FC<HomeProps> = (props) => {
+interface HomeProps {
+  cards: Entry<any>[];
+  hero: Entry<any>;
+}
+
+const Home: FC<HomeProps> = ({ cards, hero }) => {
+  const [loadedCards, setLoadedCards] = useState<Entry<any>[]>();
+
+
+  useEffect(() => {
+    setLoadedCards(cards)
+    console.log(loadedCards);
+  }, [cards, loadedCards])
   return (
     <main>
       {/* hero section */}
-      <HeroSection />
+      <HeroSection
+        imageAlt={hero.fields.heroImage.fields.description}
+        imageSrc={hero.fields.heroImage.fields.file}
+        HeroImageTitle={hero.fields.heroImageTitle}
+      />
       <section role={"aboutSection"} className={styles.aboutSectionWrapper}>
         <div className={styles.aboutTitle}>
           <h2>Who is me?</h2>
@@ -70,12 +79,18 @@ const Home: FC<HomeProps> = (props) => {
         id="projects"
         className={styles.projectsSectionWrapper}
       >
-        <h2>Selected Works</h2>
+        <h2>Our Products</h2>
         <div className={styles.projectsGrid}>
-          <SliceZone
-            slices={props.projectCards[0].data.slices}
-            components={components}
-          />
+          {
+            loadedCards && loadedCards.map((card) => {
+              <ProductCard
+                imageAlt={card.fields.productImage.fields.description}
+                imageUrl={card.fields.productImage.fields.file}
+                productDescription={card.fields.productDescription.content}
+                productTitle={card.fields.productTitle}
+              />
+            })
+          }
         </div>
       </section>
     </main>
