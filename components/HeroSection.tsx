@@ -1,18 +1,23 @@
 import { FC } from "react";
 import styles from '../styles/HeroSection.module.css'
-import placeholder from '../public/aquarium_current.jpg'
 
-const HeroSection: FC = () => {
+interface HeroSectionProps {
+    imageAlt: string;
+    imageSrc: any;
+    HeroImageTitle: string;
+}
+
+
+const HeroSection: FC<HeroSectionProps> = ({ imageAlt, imageSrc, HeroImageTitle }) => {
     return (
         <section role={"heroSection"}>
             <div
-                title="hero image"
-                style={{ backgroundImage: `url(${placeholder.src})` }}
+                title={imageAlt}
+                style={{ backgroundImage: `url(https:${imageSrc})` }}
                 className={styles.heroImageDiv}
             >
                 <div className={styles.heroImageTitleWrapper}>
-                    <h2>Hero Image Title</h2>
-                    <a href="#projects">See my work</a>
+                    <h2>{HeroImageTitle}</h2>
                 </div>
             </div>
         </section>

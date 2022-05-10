@@ -1,0 +1,48 @@
+.main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .sectionGridWrapper {
+    max-width: 100%;
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(35vw, 1fr));
+    gap: 1em;
+  }
+  
+  .hero,
+  .hero img,
+  .content,
+  .content img {
+    width: 100%;
+  }
+  
+  /* hero section */
+  
+  .hero {
+    text-align: center;
+  }
+  
+  .heroImageDiv {
+    box-shadow: var(--bs);
+  }
+  
+  .heroImageDiv a {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* content section */
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .content img {
+    box-shadow: var(--bs);
+  }
