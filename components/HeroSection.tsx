@@ -3,7 +3,7 @@ import styles from '../styles/HeroSection.module.css'
 
 interface HeroSectionProps {
     imageAlt: string;
-    imageSrc: StaticImageData;
+    imageSrc: any;
     HeroImageTitle: string;
 }
 
@@ -13,7 +13,7 @@ const HeroSection: FC<HeroSectionProps> = ({ imageAlt, imageSrc, HeroImageTitle 
         <section role={"heroSection"}>
             <div
                 title={imageAlt}
-                style={{ backgroundImage: `url(${imageSrc})` }}
+                style={{ backgroundImage: `url(https:${imageSrc})` }}
                 className={styles.heroImageDiv}
             >
                 <div className={styles.heroImageTitleWrapper}>

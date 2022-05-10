@@ -10,17 +10,17 @@ export interface ProductCardProps {
 }
 
 const ProductCard: FC<ProductCardProps> = ({ imageUrl, imageAlt, productTitle, productDescription }) => {
-    console.log('rendered card');
+    console.log("desc", productDescription);
     return (<Link href="/" passHref>
         <div
             className={styles.productCard}
-            style={{ backgroundImage: `url(${imageUrl})` }}
+            style={{ backgroundImage: `url(https:${imageUrl})` }}
             title={imageAlt}
         >
             <div className={styles.productCardContentWrapper}>
                 <h2 className={styles.productCardTitle}>{productTitle}</h2>
                 {productDescription.map(desc => {
-                    <p>{desc.content.value}</p>
+                    return <p key={desc.content[0].value}>{desc.content[0].value}</p>
                 })}
             </div>
         </div >

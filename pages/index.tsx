@@ -10,14 +10,6 @@ import { Entry } from "contentful";
 
 import { useState, useEffect } from "react";
 
-export const getStaticProps: GetStaticProps = async () => {
-  const cards = await fetchEntries("productCard");
-  const homepageHero = await fetchSingleEntry("hP2lWaaGxu582mwm4brcy");
-  return {
-    props: { cards: cards, hero: homepageHero }
-  }
-}
-
 interface HomeProps {
   cards: Entry<any>[];
   hero: Entry<any>;
@@ -36,7 +28,7 @@ const Home: FC<HomeProps> = ({ cards, hero }) => {
       {/* hero section */}
       <HeroSection
         imageAlt={hero.fields.heroImage.fields.description}
-        imageSrc={hero.fields.heroImage.fields.file}
+        imageSrc={hero.fields.heroImage.fields.file.url}
         HeroImageTitle={hero.fields.heroImageTitle}
       />
       <section role={"aboutSection"} className={styles.aboutSectionWrapper}>
@@ -83,12 +75,13 @@ const Home: FC<HomeProps> = ({ cards, hero }) => {
         <div className={styles.projectsGrid}>
           {
             loadedCards && loadedCards.map((card) => {
-              <ProductCard
+              return (<ProductCard
+                key={card.sys.id}
                 imageAlt={card.fields.productImage.fields.description}
-                imageUrl={card.fields.productImage.fields.file}
+                imageUrl={card.fields.productImage.fields.file.url}
                 productDescription={card.fields.productDescription.content}
                 productTitle={card.fields.productTitle}
-              />
+              />)
             })
           }
         </div>
@@ -98,3 +91,12 @@ const Home: FC<HomeProps> = ({ cards, hero }) => {
 };
 
 export default Home;
+
+
+export const getStaticProps: GetStaticProps = async () => {
+  const cards = await fetchEntries("productCard");
+  const homepageHero = await fetchSingleEntry("hP2lWaaGxu582mwm4brcy");
+  return {
+    props: { cards: cards, hero: homepageHero }
+  }
+}

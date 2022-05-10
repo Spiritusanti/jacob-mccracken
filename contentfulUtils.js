@@ -15,6 +15,6 @@ export const fetchEntries = async (contentType) => {
 };
 
 export const fetchSingleEntry = async (entryId) => {
-  const res = await client.getEntry(entryId);
-  return res;
+  const entry = await client.getEntry(entryId);
+  return entry;
 };
