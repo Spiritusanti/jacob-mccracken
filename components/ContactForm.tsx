@@ -5,7 +5,7 @@ const ContactForm: FC = () => {
     return (
         <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" className={styles.form}>
             <h2>Contact me:</h2>
-            <p className={styles.formInputsWrapper} >
+            <div className={styles.formInputsWrapper} >
                 <p className={styles.input}>
                     <label htmlFor="name">Your Name: </label>
                     <input type="text" name="name" id="name" />
@@ -18,7 +18,7 @@ const ContactForm: FC = () => {
                     <label htmlFor="message">Message: </label>
                     <textarea cols={50} rows={10} name="message" id="message" />
                 </p>
-            </p>
+            </div>
             <div data-netlify-recaptcha="true"></div>
             <p className={styles.buttonWrapper}>
                 <button type="submit">Send</button>

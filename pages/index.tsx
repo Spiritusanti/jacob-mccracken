@@ -8,27 +8,18 @@ import { fetchEntries, fetchSingleEntry } from "../contentfulUtils";
 import ProductCard from "../components/ProductCard";
 import { Entry } from "contentful";
 
-import { useState, useEffect } from "react";
-
 interface HomeProps {
   cards: Entry<any>[];
   hero: Entry<any>;
 }
 
 const Home: FC<HomeProps> = ({ cards, hero }) => {
-  const [loadedCards, setLoadedCards] = useState<Entry<any>[]>();
-
-
-  useEffect(() => {
-    setLoadedCards(cards)
-    console.log(loadedCards);
-  }, [cards, loadedCards])
   return (
     <main>
       {/* hero section */}
       <HeroSection
         imageAlt={hero.fields.heroImage.fields.description}
-        imageSrc={hero.fields.heroImage.fields.file.url}
+        imageSrc={`https:${hero.fields.heroImage.fields.file.url}`}
         HeroImageTitle={hero.fields.heroImageTitle}
       />
       <section role={"aboutSection"} className={styles.aboutSectionWrapper}>
@@ -74,13 +65,14 @@ const Home: FC<HomeProps> = ({ cards, hero }) => {
         <h2>Our Products</h2>
         <div className={styles.projectsGrid}>
           {
-            loadedCards && loadedCards.map((card) => {
+            cards.map((card) => {
               return (<ProductCard
                 key={card.sys.id}
                 imageAlt={card.fields.productImage.fields.description}
                 imageUrl={card.fields.productImage.fields.file.url}
                 productDescription={card.fields.productDescription.content}
                 productTitle={card.fields.productTitle}
+                slug={card.fields.slug}
               />)
             })
           }
