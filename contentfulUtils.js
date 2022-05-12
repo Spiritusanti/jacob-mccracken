@@ -8,8 +8,11 @@ const client = createClient({
   accessToken: accessToken,
 });
 
-export const fetchEntries = async (contentType) => {
-  const res = await client.getEntries({ content_type: contentType });
+export const fetchEntries = async (contentType, slug) => {
+  const res = await client.getEntries({
+    content_type: contentType,
+    "fields.slug": slug,
+  });
   const items = await res.items;
   return items;
 };

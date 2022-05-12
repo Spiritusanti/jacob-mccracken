@@ -13,7 +13,7 @@ const HeroSection: FC<HeroSectionProps> = ({ imageAlt, imageSrc, HeroImageTitle 
         <section role={"heroSection"}>
             <div
                 title={imageAlt}
-                style={{ backgroundImage: `url(https:${imageSrc})` }}
+                style={{ backgroundImage: `url(${imageSrc})` }}
                 className={styles.heroImageDiv}
             >
                 <div className={styles.heroImageTitleWrapper}>

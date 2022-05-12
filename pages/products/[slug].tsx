@@ -3,54 +3,53 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import ContactForm from '../../components/ContactForm';
 import HeroSection from '../../components/HeroSection';
 import ProductDescription from '../../components/ProductDescription';
-
-interface ProductData {
-    heroImage: StaticImageData,
-    heroImageAlt: string;
-    heroImageTitle: string;
-    descP1: string;
-    descP2: string;
-    descP3: string;
-    img1: StaticImageData;
-    img1Alt: string;
-    img2: StaticImageData;
-    img2Alt: string;
-}
+import { fetchEntries } from '../../contentfulUtils';
+import { Entry } from 'contentful';
 
 interface ProductPageProps {
-    productData: ProductData;
+    productData: Entry<any>;
 }
 
-// export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
+    const pages: Entry<any>[] = await fetchEntries('productPage');
+    const paths = pages.map(page => {
+        return { params: { slug: page.fields.slug } }
+    })
+    return {
+        paths,
+        fallback: false
+    }
+}
 
-//     return {
-//         paths: [
-//             { params: { id: productId } }
-//         ],
-//         fallback: false
-//     }
-// }
 
-
-// export const getStaticProps: GetStaticProps = async () => {
-//     const res = await fetchEntries();
-//     if (res === undefined) {
-//         console.error("query failed")
-//     }
-//     const productData = await res!.map((product) => {
-//         return product.fields;
-//     })
-//     return { props: { productData } }
-// }
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+    const pages = await fetchEntries('productPage', params!.slug);
+    return {
+        props: {
+            productData: pages[0]
+        }
+    }
+}
 
 const ProductPage: FC<ProductPageProps> = ({ productData }) => {
-    const { heroImage, heroImageAlt, heroImageTitle, descP1, descP2, descP3, img1, img1Alt, img2, img2Alt } = productData;
-
     return (
         <div>
-            <HeroSection imageAlt={heroImageAlt} imageSrc={heroImage} HeroImageTitle={heroImageTitle} />
+            <HeroSection imageAlt={productData.fields.heroImage.fields.description} imageSrc={`https:${productData.fields.heroImage.fields.file.url}`} HeroImageTitle={productData.fields.heroImageTitle} />
             <section>
-                <ProductDescription p1={descP1} p2={descP2} p3={descP3} img1={img1} img1Alt={img1Alt} img2={img2} img2Alt={img2Alt} />
+                <ProductDescription
+                    p1Title={productData.fields.ProductDescriptionSubtitle}
+                    p2Title={productData.fields.ProductDesc2Subtitle}
+                    p3Title={productData.fields.ProductDesc3Subtitle}
+                    p1={productData.fields.productDescription}
+                    p2={productData.fields.productDescription2}
+                    p3={productData.fields.productDescription3}
+                    img1={`https:${productData.fields.productImage1.fields.file.url}`}
+                    img1Alt={productData.fields.productImage1.fields.description}
+                    img2={`https:${productData.fields.productImage2.fields.file.url}`}
+                    img2Alt={productData.fields.productImage2.fields.description}
+                    pricing={productData.fields.pricing}
+                    pricingTitle={productData.fields.pricingSubtitle}
+                />
                 <ContactForm />
             </section>
         </div>

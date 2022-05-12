@@ -7,11 +7,11 @@ export interface ProductCardProps {
     imageAlt: string;
     productTitle: string;
     productDescription: any[];
+    slug: string;
 }
 
-const ProductCard: FC<ProductCardProps> = ({ imageUrl, imageAlt, productTitle, productDescription }) => {
-    console.log("desc", productDescription);
-    return (<Link href="/" passHref>
+const ProductCard: FC<ProductCardProps> = ({ imageUrl, imageAlt, productTitle, productDescription, slug }) => {
+    return (<Link href={`products/${slug}`} passHref>
         <div
             className={styles.productCard}
             style={{ backgroundImage: `url(https:${imageUrl})` }}
