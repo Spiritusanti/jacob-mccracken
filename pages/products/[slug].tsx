@@ -34,13 +34,13 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 const ProductPage: FC<ProductPageProps> = ({ productData }) => {
     return (
-        <div>
+        <article>
             <HeroSection imageAlt={productData.fields.heroImage.fields.description} imageSrc={`https:${productData.fields.heroImage.fields.file.url}`} HeroImageTitle={productData.fields.heroImageTitle} />
             <section>
                 <ProductDescription
-                    p1Title={productData.fields.ProductDescriptionSubtitle}
-                    p2Title={productData.fields.ProductDesc2Subtitle}
-                    p3Title={productData.fields.ProductDesc3Subtitle}
+                    p1Title={productData.fields.ProductDescSubtitle}
+                    p2Title={productData.fields.productDesc2subtitle}
+                    p3Title={productData.fields.productDesc3subtitle}
                     p1={productData.fields.productDescription}
                     p2={productData.fields.productDescription2}
                     p3={productData.fields.productDescription3}
@@ -53,7 +53,7 @@ const ProductPage: FC<ProductPageProps> = ({ productData }) => {
                 />
                 <ContactForm />
             </section>
-        </div>
+        </article>
     )
 }
 

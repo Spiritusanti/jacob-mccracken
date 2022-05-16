@@ -17,8 +17,9 @@ const Header: FC = () => {
             </Link>
             <nav className={styles.navWrapper}>
                 <Link href={"/"}>Home</Link>
-                <Link href={"/projects"}>Projects</Link>
-                <Link href={"/testimonials"}>Testimonials</Link>
+                <Link href={"/about"}>About</Link>
+                {/* <Link href={"/projects"}>Projects</Link>
+                <Link href={"/testimonials"}>Testimonials</Link> */}
                 <Link href={"/contact"}>Contact</Link>
             </nav>
         </header>

@@ -66,14 +66,15 @@ const Home: FC<HomeProps> = ({ cards, hero }) => {
         <div className={styles.projectsGrid}>
           {
             cards.map((card) => {
-              return (<ProductCard
-                key={card.sys.id}
-                imageAlt={card.fields.productImage.fields.description}
-                imageUrl={card.fields.productImage.fields.file.url}
-                productDescription={card.fields.productDescription.content}
-                productTitle={card.fields.productTitle}
-                slug={card.fields.slug}
-              />)
+              return (<div className={styles.cardContainer} key={card.sys.id}>
+                <ProductCard
+                  imageAlt={card.fields.productImage.fields.description}
+                  imageUrl={card.fields.productImage.fields.file.url}
+                  productDescription={card.fields.productDescription.content}
+                  productTitle={card.fields.productTitle}
+                  slug={card.fields.slug}
+                />
+              </div>)
             })
           }
         </div>
