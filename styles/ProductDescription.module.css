@@ -1,0 +1,55 @@
+.productDescGridWrapper {
+  display: grid;
+  padding: 1em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(autofit, minmax(15vw, 1fr));
+  grid-template-areas:
+    "primaryDesc primaryDesc"
+    "secondaryDesc secondaryDesc"
+    "tertiaryDesc tertiaryDesc"
+    "quaternaryDesc quaternaryDesc";
+  gap: 8em;
+}
+
+.imgWrapper {
+  box-shadow: var(--bs);
+  margin: 0;
+  padding: 0;
+}
+
+.primaryDesc {
+  grid-area: primaryDesc;
+  width: 100%;
+}
+
+.secondaryDesc {
+  grid-area: secondaryDesc;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(345px, 1fr));
+  gap: 5em;
+}
+
+.tertiaryDesc {
+  grid-area: tertiaryDesc;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(345px, 1fr));
+  gap: 5em;
+}
+
+.quaternaryDesc {
+  grid-area: quaternaryDesc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5em;
+}
+
+.quaternaryDesc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

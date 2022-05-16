@@ -50,8 +50,12 @@
 .projectsGrid {
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
   gap: 1rem;
+}
+
+.cardContainer {
+  width: 100%;
 }
 
 @media screen and (max-width: 800px) {

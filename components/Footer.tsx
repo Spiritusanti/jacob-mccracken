@@ -12,14 +12,8 @@ const Footer: FC = () => {
                 <a href="#">
                     <h5>Polywork</h5>
                 </a>
-                <a href="#">
-                    <h5>Github</h5>
-                </a>
-                <a href="#">
-                    <h5>Email</h5>
-                </a>
             </div>
-            <p className={styles.copyright}>© Jacob McCracken 2022</p>
+            <p className={styles.copyright}>© McCrackenDev 2022</p>
         </footer>
     )
 }
