@@ -14,6 +14,13 @@ const ContactForm: FC = () => {
                     <label htmlFor="email">Your Email: </label>
                     <input type="email" name="email" id="email" />
                 </p>
+                <p className={styles.input}>
+                    <label htmlFor="product">Select Product: </label>
+                    <select name="product" id="product">
+                        <option value="basic static site">Basic Static Site</option>
+                        <option value="single page Application">Single Page Application</option>
+                    </select>
+                </p>
                 <p className={styles.textareaWrapper}>
                     <label htmlFor="message">Message: </label>
                     <textarea cols={50} rows={10} name="message" id="message" />
