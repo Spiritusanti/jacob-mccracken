@@ -12,8 +12,9 @@
 }
 
 .imgWrapper {
+  width: 100%;
   box-shadow: var(--bs);
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -52,4 +53,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 850px) {
+.secondaryDesc, .tertiaryDesc {
+  grid-template-columns: 1fr;
+}
+
+.tertiaryDesc .imgWrapper {
+  order: -1;
+}
 }

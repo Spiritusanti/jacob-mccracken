@@ -5,11 +5,9 @@ import { FC } from "react";
 import styles from '../styles/Header.module.css';
 import { useState } from 'react';
 import useOnClickOutside from "react-cool-onclickoutside";
-import { useRouter } from 'next/router';
 
 const Header: FC = () => {
     const [navBarOpen, setNavBarOpen] = useState<boolean>(false);
-    const history = useRouter();
     const ref = useOnClickOutside(() => {
         setNavBarOpen(false);
     })
@@ -18,12 +16,9 @@ const Header: FC = () => {
     const closeNavHandler = () => {
         setNavBarOpen(false);
     }
-    const navBarHandler = () => {
-        if (navBarOpen) {
-            setNavBarOpen(false)
-        } else {
-            setNavBarOpen(true)
-        }
+    const NavBarHandler = () => {
+        setNavBarOpen(!navBarOpen)
+        console.log(navBarOpen);
     }
 
     return (
@@ -37,7 +32,7 @@ const Header: FC = () => {
                         <h1>McCrackenDev</h1>
                     </div>
                 </Link>
-                <button className={styles.hamburgerWrapper} onClick={navBarHandler}>
+                <button className={styles.hamburgerWrapper} onClick={NavBarHandler} ref={ref}>
                     <div className={styles.hamburger}></div>
                 </button>
             </section>

@@ -71,7 +71,7 @@
   background-color: teal;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
   border-radius: 0 0 5px 5px;
-  height: 5vw;
+  height: max-content;
   padding-right: 2em;
   display: flex;
   justify-content: flex-end;
@@ -79,6 +79,8 @@
   gap: 1em;
   font-size: 1.15rem;
   font-weight: bold;
+  margin-bottom: 2em;
+  padding: 2em;
 }
 
 .navWrapper a:hover,
@@ -89,6 +91,13 @@
 
 @media screen and (max-width: 800px) {
   .header {
+    flex-direction: column;
+    margin: 0 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navWrapper {
     flex-direction: column;
   }
 }

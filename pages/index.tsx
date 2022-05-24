@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import placeholder from "../public/aquarium_current.jpg";
+import { v4 as uuid } from "uuid"
 import { FC } from "react";
 import HeroSection from "../components/HeroSection";
 import { GetStaticProps } from 'next'
@@ -26,14 +26,13 @@ const Home: FC<HomeProps> = ({ cards, hero, blurb }) => {
         HeroImageTitle={hero.fields.heroImageTitle}
       />
       <section role={"aboutSection"} className={styles.aboutSectionWrapper}>
-
         <div className={styles.aboutSectionContentWrapper}>
           <div className={styles.aboutSectionContent}>
             <div className={styles.aboutTitle}>
               <h2>{blurb.fields.title}</h2>
             </div>
             {blurbContent.map((item) => {
-              return documentToReactComponents(item)
+              return <div key={uuid()}>{documentToReactComponents(item)}</div>
             })}
           </div>
           <div className={styles.aboutSectionContentImageWrapper}>
@@ -56,7 +55,7 @@ const Home: FC<HomeProps> = ({ cards, hero, blurb }) => {
         <div className={styles.productsGrid}>
           {
             cards.map((card) => {
-              return (<div className={styles.cardContainer} key={card.sys.id}>
+              return (<div className={styles.cardContainer} key={uuid()}>
                 <ProductCard
                   imageAlt={card.fields.productImage.fields.description}
                   imageUrl={card.fields.productImage.fields.file.url}
