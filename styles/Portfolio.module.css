@@ -1,0 +1,14 @@
+.pageTitle::after {
+  content: "";
+  display: block;
+  width: 45vw;
+  height: 8px;
+  margin: 0;
+  background: teal;
+  opacity: 0.75;
+}
+
+.portfolioSectionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, max-content));
+}
