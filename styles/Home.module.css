@@ -2,14 +2,13 @@
 .aboutSectionWrapper {
   background-color: #303030;
   color: white;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
+  margin: 2em 0;
   box-shadow: var(--bs);
 }
 
 .aboutTitle h2 {
-  padding-top: 1rem;
+  font-size: 2rem;
 }
 
 .aboutSectionContentWrapper {
@@ -21,6 +20,7 @@
 .aboutSectionContent {
   padding-top: 0;
   margin-top: 0;
+  font-size: 1.25rem;
 }
 
 .aboutSectionContent:first-child {
@@ -29,7 +29,10 @@
 }
 
 .aboutSectionContentImageWrapper {
-  padding-top: 1rem;
+  margin: 0;
+  padding: 0;
+  box-shadow: var(--bs);
+  height: min-content;
 }
 
 @media screen and (max-width: 600px) {
@@ -42,12 +45,12 @@
   }
 }
 
-/* projects Section */
-.projectsSectionWrapper {
+/* products Section */
+.productsSectionWrapper {
   margin-bottom: 1rem;
 }
 
-.projectsGrid {
+.productsGrid {
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
@@ -59,17 +62,17 @@
 }
 
 @media screen and (max-width: 800px) {
-  .projectsGrid {
+  .productsGrid {
     grid-template-columns: repeat(2, auto);
   }
 
-  .projectsSectionWrapper {
+  .productsSectionWrapper {
     text-align: center;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .projectsGrid {
+  .productsGrid {
     grid-template-columns: 1fr;
   }
 }
