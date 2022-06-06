@@ -24,7 +24,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
     const pages = await fetchEntries('productPage', params!.slug);
-    const page = pages ? pages[0] : null;
+    const page = pages && pages[0];
     return {
         props: {
             productData: page

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import Link from "next/link";
-import styles from "../styles/ProductCard.module.css"
+import styles from "../styles/Card.module.css"
 
 export interface ProductCardProps {
     imageUrl: string;

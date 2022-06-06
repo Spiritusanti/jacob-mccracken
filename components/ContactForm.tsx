@@ -17,6 +17,8 @@ const ContactForm: FC = () => {
                 <p className={styles.input}>
                     <label htmlFor="product">Select Product: </label>
                     <select name="product" id="product">
+                        <option value="" disabled={true} selected={true}>- Select Option -</option>
+                        <option value="general inquiry">General Inquiry</option>
                         <option value="basic static site">Basic Static Site</option>
                         <option value="single page Application">Single Page Application</option>
                     </select>

@@ -29,7 +29,6 @@
   box-shadow: var(--bs);
   width: 100%;
   max-width: 92vw;
-  height: min-content;
   margin: 1em;
 }
 
