@@ -32,6 +32,7 @@ const Header: FC = () => {
                         <h1>McCrackenDev</h1>
                     </div>
                 </Link>
+
                 <button className={styles.hamburgerWrapper} onClick={NavBarHandler} ref={ref}>
                     <div className={styles.hamburger}></div>
                 </button>

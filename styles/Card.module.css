@@ -19,7 +19,8 @@
 
   background: linear-gradient(
     hsl(0 0% 0%/0),
-    hsl(0 0% 0%/0.45) 15%,
+    hsl(0 0% 0%/0.5) 10%,
+    hsl(0 0% 0%/0.85) 50%,
     hsl(0 0% 0%/1)
   );
 }

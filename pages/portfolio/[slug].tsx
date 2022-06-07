@@ -4,6 +4,7 @@ import HeroSection from "../../components/HeroSection";
 import { fetchEntries } from "../../contentfulUtils";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import Image from "next/image";
+import styles from '../../styles/PortfolioItem.module.css';
 
 
 interface PortfolioItemPageProps {
@@ -14,27 +15,36 @@ const PortfolioItemPage: NextPage<PortfolioItemPageProps> = ({ portfolioItemPage
     return (
         <article>
             <HeroSection HeroImageTitle={portfolioItemPage.fields.itemTitle} imageSrc={`https:${portfolioItemPage.fields.itemHeroImage.fields.file.url}`} imageAlt={""} />
-            <section>
-                <h2>{portfolioItemPage.fields.itemDescriptionSubtitle}</h2>
-                <span>{documentToReactComponents(portfolioItemPage.fields.itemDescription)}</span>
-                <Image
-                    src={`https:${portfolioItemPage.fields.itemImagePrimary.fields.file.url}`}
-                    alt={portfolioItemPage.fields.itemImagePrimary.description}
-                    width={portfolioItemPage.fields.itemImagePrimary.fields.file.details.image.width}
-                    height={portfolioItemPage.fields.itemImagePrimary.fields.file.details.image.height}
-                />
-
+            <section className={styles.contentSection}>
+                <div className={styles.contentGridWrapper}>
+                    <div>
+                        <h2>{portfolioItemPage.fields.itemDescriptionSubtitle}</h2>
+                        <span>{documentToReactComponents(portfolioItemPage.fields.itemDescription)}</span>
+                    </div>
+                    <div className={styles.imageWrapper}>
+                        <Image
+                            src={`https:${portfolioItemPage.fields.itemImagePrimary.fields.file.url}`}
+                            alt={portfolioItemPage.fields.itemImagePrimary.description}
+                            width={portfolioItemPage.fields.itemImagePrimary.fields.file.details.image.width}
+                            height={portfolioItemPage.fields.itemImagePrimary.fields.file.details.image.height}
+                            layout="responsive"
+                        />
+                    </div>
+                </div>
                 <span>{documentToReactComponents(portfolioItemPage.fields.itemDescriptionSecondary)}</span>
-                <Image
-                    src={`https:${portfolioItemPage.fields.itemImageSecondary.fields.file.url}`}
-                    alt={portfolioItemPage.fields.itemImageSecondary.description}
-                    width={portfolioItemPage.fields.itemImageSecondary.fields.file.details.image.width}
-                    height={portfolioItemPage.fields.itemImageSecondary.fields.file.details.image.height}
-                />
-                <span>{documentToReactComponents(portfolioItemPage.fields.itemDescriptionTertiary)}</span>
-
+                <div className={styles.contentGridWrapper}>
+                    <div className={styles.imageWrapper}>
+                        <Image
+                            src={`https:${portfolioItemPage.fields.itemImageSecondary.fields.file.url}`}
+                            alt={portfolioItemPage.fields.itemImageSecondary.description}
+                            width={portfolioItemPage.fields.itemImageSecondary.fields.file.details.image.width}
+                            height={portfolioItemPage.fields.itemImageSecondary.fields.file.details.image.height}
+                            layout="responsive"
+                        />
+                    </div>
+                    <span>{documentToReactComponents(portfolioItemPage.fields.itemDescriptionTertiary)}</span>
+                </div>
             </section>
-
         </article>
     )
 }

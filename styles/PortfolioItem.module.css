@@ -1,0 +1,18 @@
+.contentSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.contentGridWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1em;
+}
+
+.imageWrapper {
+    box-shadow: var(--bs);
+    width: 100%;
+}
