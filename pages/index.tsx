@@ -25,7 +25,7 @@ const Home: FC<HomeProps> = ({ cards, hero, blurb }) => {
         imageSrc={`https:${hero.fields.heroImage.fields.file.url}`}
         HeroImageTitle={hero.fields.heroImageTitle}
       />
-      <section role={"aboutSection"} className={styles.aboutSectionWrapper}>
+      <section className={styles.aboutSectionWrapper}>
         <div className={styles.aboutSectionContentWrapper}>
           <div className={styles.aboutSectionContent}>
             <div className={styles.aboutTitle}>
@@ -47,7 +47,6 @@ const Home: FC<HomeProps> = ({ cards, hero, blurb }) => {
         </div>
       </section>
       <section
-        role={"projectSection"}
         id="projects"
         className={styles.productsSectionWrapper}
       >
