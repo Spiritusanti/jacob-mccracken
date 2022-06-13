@@ -5,6 +5,7 @@
   background-size: cover;
   max-width: 35ch;
   height: 22vw;
+  min-height: 50vh;
   border-radius: 0.5rem;
   overflow: hidden;
   transition: transform 500ms ease;
@@ -14,7 +15,7 @@
 
 .productCardContentWrapper {
   width: 105%;
-  min-height: 35vw;
+  min-height: 100%;
   padding: 2em;
 
   background: linear-gradient(
@@ -26,8 +27,8 @@
 }
 
 .productCardTitle {
-  width: max-content;
-  max-width: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 @media (hover) {
@@ -63,6 +64,12 @@
 @media screen and (max-width: 600px) {
   .productCardContentWrapper {
     transform: translateY(0);
+
+    background: linear-gradient(
+      hsl(0 0% 0%/0),
+      hsl(0 0% 0%/0.5) 15%,
+      hsl(0 0% 0%/1)
+    );
   }
 
   .productCardContentWrapper > *:not(.productCardTitle) {
