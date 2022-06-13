@@ -32,10 +32,6 @@
   margin: 1em;
 }
 
-.imageWrapper img {
-  width: 100%;
-}
-
 @media screen and (max-width: 720px) {
   .aboutSectionGridWrapper {
     grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
