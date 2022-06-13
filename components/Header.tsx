@@ -32,6 +32,7 @@ const Header: FC = () => {
                         <h1>McCrackenDev</h1>
                     </div>
                 </Link>
+
                 <button className={styles.hamburgerWrapper} onClick={NavBarHandler} ref={ref}>
                     <div className={styles.hamburger}></div>
                 </button>
@@ -44,8 +45,10 @@ const Header: FC = () => {
                     <Link href={"/about"}>
                         <a onClick={closeNavHandler}>About</a>
                     </Link>
-                    {/* <Link href={"/projects"}><a onClick={closeNavHandler}>Projects</a></Link>
-                    <Link href={"/testimonials"}><a onClick={closeNavHandler}>Testimonials</a></Link> */}
+                    <Link href={"/portfolio"}>
+                        <a onClick={closeNavHandler}>Portfolio</a>
+                    </Link>
+                    {/*<Link href={"/testimonials"}><a onClick={closeNavHandler}>Testimonials</a></Link> */}
                     <Link href={"/contact"}>
                         <a onClick={closeNavHandler}>Contact</a>
                     </Link>

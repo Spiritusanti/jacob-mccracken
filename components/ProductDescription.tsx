@@ -1,7 +1,6 @@
 import { FC } from "react";
 import Image from 'next/image';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import { Document } from '@contentful/rich-text-types'
 import styles from '../styles/ProductDescription.module.css';
 import { Entry } from "contentful";
 

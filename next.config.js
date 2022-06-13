@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ["unsplash.com", "images.ctfassets.net"],
+    formats: ['image/webp']
   },
 };
 

@@ -1,7 +1,8 @@
 /* hero section */
 .heroImageDiv {
   width: 100%;
-  height: 50vh;
+  height: 35vw;
+  min-height: 50vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: black;
