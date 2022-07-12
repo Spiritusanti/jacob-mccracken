@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>McCrackenDev</title>
         <meta name="viewport" content='initial-scale=1.0, width=device-width' />
+        <meta name='description' content='Freelance developer providing development services to small business.' />
         <link rel='shortcut icon' href='/favicon.png' type='image/png' />
       </Head>
       <Header />

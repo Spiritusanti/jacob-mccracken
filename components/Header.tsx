@@ -33,7 +33,7 @@ const Header: FC = () => {
                     </div>
                 </Link>
 
-                <button className={styles.hamburgerWrapper} onClick={NavBarHandler} ref={ref}>
+                <button aria-label='navigation menu' className={styles.hamburgerWrapper} onClick={NavBarHandler} ref={ref}>
                     <div className={styles.hamburger}></div>
                 </button>
             </section>

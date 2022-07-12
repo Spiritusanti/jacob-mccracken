@@ -7,10 +7,10 @@ const Footer: FC = () => {
             {/* copyright and social links */}
             <div className={styles.socialLinkWrapper}>
                 <a href="#">
-                    <h5>Twitter</h5>
+                    <p>Twitter</p>
                 </a>
                 <a href="#">
-                    <h5>Polywork</h5>
+                    <p>Polywork</p>
                 </a>
             </div>
             <p className={styles.copyright}>© McCrackenDev 2022</p>

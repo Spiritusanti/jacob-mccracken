@@ -10,7 +10,7 @@ interface HeroSectionProps {
 
 const HeroSection: FC<HeroSectionProps> = ({ imageAlt, imageSrc, HeroImageTitle }) => {
     return (
-        <section role={"heroSection"}>
+        <section>
             <div
                 title={imageAlt}
                 style={{ backgroundImage: `url(${imageSrc})` }}
